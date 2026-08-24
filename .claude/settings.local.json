@@ -381,7 +381,11 @@
       "Bash(node scripts/vessel-photos.mjs --max 8 \"D:/VESSEL/vessel-photos/new-batch\")",
       "Bash(node -e 'const m=require\\(\"./src/data/vesselPhotos.json\"\\);console.log\\(\"Key IMO: \"+Object.keys\\(m\\).filter\\(k=>/^\\\\d{7}$/.test\\(k\\)\\).length\\);')",
       "Bash(node -e 'const a=require\\(\"./src/data/ahtsVessels.json\"\\);a.slice\\(0,6\\).forEach\\(v=>console.log\\(v.displayName+\": speedKn=\"+JSON.stringify\\(v.speedKn\\)\\)\\);')",
-      "Bash(rm -rf .next)"
+      "Bash(rm -rf .next)",
+      "Bash(npm install *)",
+      "Bash(node -e 'const t=require\\(\"topojson-client\"\\);const w=require\\(\"world-atlas/land-50m.json\"\\);const g=t.feature\\(w,w.objects.land\\);console.log\\(\"land features:\",g.features.length,\"| type:\",g.features[0].geometry.type\\);')",
+      "Bash(node scripts/build-sea-grid.mjs)",
+      "Bash(npm uninstall *)"
     ]
   }
 }

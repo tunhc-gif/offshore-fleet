@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Route, ArrowRight, AlertTriangle } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { offshoreFields } from "@/data/offshoreAreas";
+import { seaDistance } from "@/lib/seaRoute";
 
 type Pt = { id: string; label: string; lat: number; lng: number; group: "port" | "field" };
 
@@ -24,18 +25,6 @@ const PORTS: Pt[] = [
   { id: "jebelali", label: "Jebel Ali / Dubai (UAE)", lat: 25.01, lng: 55.06, group: "port" },
   { id: "hamad", label: "Hamad / Doha (QA)", lat: 24.98, lng: 51.6, group: "port" },
 ];
-
-const R_NM = 3440.065; // Earth radius in nautical miles
-
-function haversineNm(a: Pt, b: Pt): number {
-  const toRad = (d: number) => (d * Math.PI) / 180;
-  const dLat = toRad(b.lat - a.lat);
-  const dLng = toRad(b.lng - a.lng);
-  const s =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos(toRad(a.lat)) * Math.cos(toRad(b.lat)) * Math.sin(dLng / 2) ** 2;
-  return 2 * R_NM * Math.asin(Math.min(1, Math.sqrt(s)));
-}
 
 // Parse "10.35, 107.08" or DMS "15°54'11\"N 96°49'00\"E" / "15 54 11 N 96 49 00 E".
 function parseCoord(raw: string): { lat: number; lng: number } | null {
@@ -160,13 +149,25 @@ export default function VoyageCalculator({ defaultSpeed }: { defaultSpeed: numbe
   const spd = parseFloat(speed);
   const wfPct = Math.min(50, Math.max(0, parseFloat(wf) || 0));
 
-  const result = useMemo(() => {
-    if (!from || !to || !(spd > 0)) return null;
-    const nm = haversineNm(from, to);
-    const effSpeed = spd * (1 - wfPct / 100);
-    const hours = effSpeed > 0 ? nm / effSpeed : 0;
-    return { nm, hours };
-  }, [from, to, spd, wfPct]);
+  const [result, setResult] = useState<{ nm: number; hours: number; method: "sea" | "great-circle" } | null>(null);
+  const [calculating, setCalculating] = useState(false);
+  const fLat = from?.lat, fLng = from?.lng, tLat = to?.lat, tLng = to?.lng;
+
+  useEffect(() => {
+    if (fLat === undefined || fLng === undefined || tLat === undefined || tLng === undefined || !(spd > 0)) {
+      setResult(null);
+      return;
+    }
+    let cancelled = false;
+    setCalculating(true);
+    seaDistance(fLng, fLat, tLng, tLat).then((r) => {
+      if (cancelled) return;
+      const effSpeed = spd * (1 - wfPct / 100);
+      setResult({ nm: r.nm, method: r.method, hours: effSpeed > 0 ? r.nm / effSpeed : 0 });
+      setCalculating(false);
+    });
+    return () => { cancelled = true; };
+  }, [fLat, fLng, tLat, tLng, spd, wfPct]);
 
   return (
     <div className="mt-4 rounded-lg border border-border bg-surface-3/40 p-3">
@@ -207,11 +208,16 @@ export default function VoyageCalculator({ defaultSpeed }: { defaultSpeed: numbe
       </div>
 
       <div className="mt-3 rounded-lg border border-brand-500/30 bg-brand-500/5 p-3 text-sm">
-        {result ? (
+        {calculating ? (
+          <p className="text-xs italic text-ink-soft">{vi ? "Đang tính tuyến đường biển…" : "Computing sea route…"}</p>
+        ) : result ? (
           <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1">
             <span>
               <span className="text-ink-soft">{vi ? "Quãng đường" : "Distance"}: </span>
               <span className="font-bold text-ink">{Math.round(result.nm).toLocaleString()} NM</span>
+              <span className="ml-1 text-[11px] text-ink-soft">
+                {result.method === "sea" ? (vi ? "· theo đường biển" : "· sea route") : vi ? "· đường thẳng (ngoài vùng lưới)" : "· straight line (outside grid)"}
+              </span>
             </span>
             <span>
               <span className="text-ink-soft">{vi ? "Thời gian" : "Time"}: </span>
@@ -232,8 +238,8 @@ export default function VoyageCalculator({ defaultSpeed }: { defaultSpeed: numbe
         <AlertTriangle size={12} className="mt-0.5 shrink-0 text-accent" />
         <span>
           {vi
-            ? "Ước tính theo đường vòng cung lớn (great-circle) trên mặt cầu — KHÔNG né đất liền, eo biển hay kênh đào, nên với tuyến có bờ chắn giữa quãng đường thực sẽ dài hơn. Dùng để tham khảo nhanh; lập kế hoạch chính thức hãy dùng phần mềm hải trình (vd Netpas)."
-            : "Great-circle estimate on a sphere — does NOT avoid land, straits or canals, so real routes past a landmass are longer. For quick reference only; use routing software (e.g. Netpas) for formal planning."}
+            ? "Tuyến biển tính bằng thuật toán né đất liền trên lưới ~0,1° (≈6 NM) — đã đi vòng qua đất liền/eo biển, sai số vài phần trăm so với phần mềm hải trình chuyên dụng (chưa mô hình hoá kênh đào Suez/Panama, dòng chảy, vùng cấm). Dùng để ước lượng nhanh."
+            : "Sea route computed by a land-avoiding algorithm on a ~0.1° (≈6 NM) grid — it goes around land/straits, within a few % of professional routing software (canals like Suez/Panama, currents and restricted zones not modelled). Quick estimate only."}
         </span>
       </div>
     </div>
