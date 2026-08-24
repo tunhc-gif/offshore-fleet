@@ -19,6 +19,24 @@ function getCleanImo(idImo: string | number | undefined): string | null {
   return /^\d{7}$/.test(digits) ? digits : null;
 }
 
+// Average of the speeds stated in the spec's speed field (e.g. "14 knots (max);
+// 10 knots (port)" → 12). Prefers knot-tagged values; falls back to any number
+// in a plausible speed range. Returns null when no usable speed is present.
+function averageSpeedKn(speedKn: string | number | undefined): number | null {
+  const s = String(speedKn ?? "");
+  if (!s || /không tìm thấy|không áp dụng/i.test(s)) return null;
+  let vals = [...s.matchAll(/(\d+(?:[.,]\d+)?)\s*(?:knots?|kts?|kn|hải\s*lý|hai\s*ly)/gi)]
+    .map((m) => parseFloat(m[1].replace(",", ".")));
+  if (!vals.length) {
+    vals = [...s.matchAll(/(\d+(?:[.,]\d+)?)/g)]
+      .map((m) => parseFloat(m[1].replace(",", ".")))
+      .filter((n) => n >= 3 && n <= 40);
+  }
+  vals = vals.filter((n) => n >= 1 && n <= 45);
+  if (!vals.length) return null;
+  return Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * 10) / 10;
+}
+
 export default function VesselDetailPage({
   params,
 }: {
@@ -38,8 +56,7 @@ export default function VesselDetailPage({
   }
 
   const imo = getCleanImo(vessel.idImo);
-  const speedMatch = String(vessel.speedKn ?? "").match(/(\d+(?:\.\d+)?)/);
-  const defaultSpeed = speedMatch ? parseFloat(speedMatch[1]) : null;
+  const defaultSpeed = averageSpeedKn(vessel.speedKn);
   const photoMap = vesselPhotos as Record<string, string[]>;
   const photos =
     (imo && photoMap[imo]) ||
