@@ -6,6 +6,7 @@ import { Info, Radar, ExternalLink, CloudRain, ChevronRight, Camera } from "luci
 import PageHeader from "@/components/PageHeader";
 import VesselPhotos from "@/components/VesselPhotos";
 import ClassSurvey from "@/components/ClassSurvey";
+import VoyageCalculator from "@/components/VoyageCalculator";
 import vesselPhotos from "@/data/vesselPhotos.json";
 import { useLanguage } from "@/context/LanguageContext";
 import { useVesselData } from "@/context/VesselDataContext";
@@ -37,6 +38,8 @@ export default function VesselDetailPage({
   }
 
   const imo = getCleanImo(vessel.idImo);
+  const speedMatch = String(vessel.speedKn ?? "").match(/(\d+(?:\.\d+)?)/);
+  const defaultSpeed = speedMatch ? parseFloat(speedMatch[1]) : null;
   const photoMap = vesselPhotos as Record<string, string[]>;
   const photos =
     (imo && photoMap[imo]) ||
@@ -95,6 +98,8 @@ export default function VesselDetailPage({
         ) : (
           <p className="text-xs italic text-ink-soft">{t("trackingNoImo")}</p>
         )}
+
+        <VoyageCalculator defaultSpeed={defaultSpeed} />
       </div>
 
       <ClassSurvey imo={imo} society={vessel.idClassSociety} notation={vessel.idNotation} />

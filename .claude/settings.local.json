@@ -379,7 +379,9 @@
       "Bash(git commit --allow-empty -q -m 'Trigger rebuild after repo rename jub-platform -> offshore-fleet *)",
       "Bash(node scripts/vessel-photos.mjs \"D:/VESSEL/vessel-photos/new-batch\")",
       "Bash(node scripts/vessel-photos.mjs --max 8 \"D:/VESSEL/vessel-photos/new-batch\")",
-      "Bash(node -e 'const m=require\\(\"./src/data/vesselPhotos.json\"\\);console.log\\(\"Key IMO: \"+Object.keys\\(m\\).filter\\(k=>/^\\\\d{7}$/.test\\(k\\)\\).length\\);')"
+      "Bash(node -e 'const m=require\\(\"./src/data/vesselPhotos.json\"\\);console.log\\(\"Key IMO: \"+Object.keys\\(m\\).filter\\(k=>/^\\\\d{7}$/.test\\(k\\)\\).length\\);')",
+      "Bash(node -e 'const a=require\\(\"./src/data/ahtsVessels.json\"\\);a.slice\\(0,6\\).forEach\\(v=>console.log\\(v.displayName+\": speedKn=\"+JSON.stringify\\(v.speedKn\\)\\)\\);')",
+      "Bash(rm -rf .next)"
     ]
   }
 }
