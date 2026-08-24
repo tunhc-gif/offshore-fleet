@@ -376,7 +376,10 @@
       "Bash(node \"C:/Users/tunhc/AppData/Local/Temp/claude/D--VESSEL-JUB-Operation-Manual-jub-platform/71b528e9-c4ab-4a96-b9a6-fe7aca3f492e/scratchpad/apply-imo.mjs\")",
       "Bash(node \"C:/Users/tunhc/AppData/Local/Temp/claude/D--VESSEL-JUB-Operation-Manual-jub-platform/71b528e9-c4ab-4a96-b9a6-fe7aca3f492e/scratchpad/apply-imo.mjs\" --apply)",
       "Bash(git remote *)",
-      "Bash(git commit --allow-empty -q -m 'Trigger rebuild after repo rename jub-platform -> offshore-fleet *)"
+      "Bash(git commit --allow-empty -q -m 'Trigger rebuild after repo rename jub-platform -> offshore-fleet *)",
+      "Bash(node scripts/vessel-photos.mjs \"D:/VESSEL/vessel-photos/new-batch\")",
+      "Bash(node scripts/vessel-photos.mjs --max 8 \"D:/VESSEL/vessel-photos/new-batch\")",
+      "Bash(node -e 'const m=require\\(\"./src/data/vesselPhotos.json\"\\);console.log\\(\"Key IMO: \"+Object.keys\\(m\\).filter\\(k=>/^\\\\d{7}$/.test\\(k\\)\\).length\\);')"
     ]
   }
 }
