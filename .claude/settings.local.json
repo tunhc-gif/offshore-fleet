@@ -385,7 +385,11 @@
       "Bash(npm install *)",
       "Bash(node -e 'const t=require\\(\"topojson-client\"\\);const w=require\\(\"world-atlas/land-50m.json\"\\);const g=t.feature\\(w,w.objects.land\\);console.log\\(\"land features:\",g.features.length,\"| type:\",g.features[0].geometry.type\\);')",
       "Bash(node scripts/build-sea-grid.mjs)",
-      "Bash(npm uninstall *)"
+      "Bash(npm uninstall *)",
+      "Bash(node --max-old-space-size=4096 scripts/build-sea-grid.mjs)",
+      "Bash(node --max-old-space-size=2048 \"C:/Users/tunhc/AppData/Local/Temp/claude/D--VESSEL-JUB-Operation-Manual-jub-platform/71b528e9-c4ab-4a96-b9a6-fe7aca3f492e/scratchpad/verify-searoute.mjs\")",
+      "Bash(node -e *)",
+      "Bash(node --max-old-space-size=2048 *)"
     ]
   }
 }
