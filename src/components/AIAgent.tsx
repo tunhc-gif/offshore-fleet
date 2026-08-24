@@ -25,6 +25,7 @@ type ChatMessage = {
   role: "user" | "ai";
   text: string;
   vessels?: Vessel[];
+  allMatched?: Vessel[];
   describe?: (v: Vessel) => string;
   confidence?: Confidence;
 };
@@ -48,7 +49,9 @@ function keywordMatchReason(v: JubVessel, q: string): string {
   return v.idOwner ? String(v.idOwner) : "";
 }
 
-type Answer = { text: string; vessels: Vessel[]; describe: (v: Vessel) => string; confidence: Confidence };
+// `vessels` = the (capped) list shown in chat; `allMatched` = the FULL result set
+// used for CSV export so the file matches the headline count, not the display slice.
+type Answer = { text: string; vessels: Vessel[]; allMatched: Vessel[]; describe: (v: Vessel) => string; confidence: Confidence };
 
 const CLASS_ASK = /drydock|dry-dock|lên đà|len da|special survey|periodic survey|đăng kiểm định kỳ|còn class|con class|treo class|withdrawn|suspended|hết hạn|het han|class status|tình trạng class|tinh trang class|class certificate|chứng chỉ đăng kiểm|giấy chứng nhận class/i;
 
@@ -63,6 +66,7 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
           ? 'Trạng thái class, hạn lên đà (drydock) và hạn kiểm định là dữ liệu ĐỘNG — chỉ đăng kiểm mới có giá trị pháp lý, nền tảng không lưu. Hãy mở trang chi tiết một tàu → mục "Cấp tàu & Kiểm định (Class & Survey)" và bấm Equasis / cổng đăng kiểm để tra theo IMO (bản mới nhất).'
           : 'Class status, next drydock and survey windows are DYNAMIC — only the classification society is authoritative and the platform does not store them. Open a vessel detail page → "Class & Survey" and use the Equasis / society links to check by IMO (latest record).',
       vessels: [],
+      allMatched: [],
       describe: () => "",
       confidence: {
         level: "low",
@@ -84,6 +88,7 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
     return {
       text,
       vessels: top.map((r) => r.vessel),
+      allMatched: result.rows.map((r) => r.vessel),
       describe: (v) => `${tt("aiAgentDowntimeShort")} ${dtByVessel.get(v.id) ?? "?"}% · ${v.idType}`,
       confidence: result.confidence,
     };
@@ -103,6 +108,7 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
     return {
       text: base + sortText,
       vessels: vessels.slice(0, isRegion ? 30 : 12) as Vessel[],
+      allMatched: vessels as Vessel[],
       describe: structured.describe as (v: Vessel) => string,
       confidence: isRegion ? regionConfidence(vessels.length) : structuredConfidence(structured),
     };
@@ -110,9 +116,9 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
 
   // Keyword fallback.
   const ql = query.trim().toLowerCase();
-  const found = allVessels.filter((v) => vesselHaystack(v).includes(ql)).slice(0, 8);
-  const text = found.length > 0 ? format(tt("aiAgentFoundKeyword"), { n: found.length, query }) : format(tt("aiAgentNoneKeyword"), { query });
-  return { text, vessels: found, describe: (v) => keywordMatchReason(v, query), confidence: keywordConfidence(found.length) };
+  const foundAll = allVessels.filter((v) => vesselHaystack(v).includes(ql));
+  const text = foundAll.length > 0 ? format(tt("aiAgentFoundKeyword"), { n: foundAll.length, query }) : format(tt("aiAgentNoneKeyword"), { query });
+  return { text, vessels: foundAll.slice(0, 8), allMatched: foundAll, describe: (v) => keywordMatchReason(v, query), confidence: keywordConfidence(foundAll.length) };
 }
 
 const CONF_STYLE: Record<Confidence["level"], string> = {
@@ -175,9 +181,9 @@ export default function AIAgent() {
     if (!query) return;
     idRef.current += 1;
     const userMsg: ChatMessage = { id: idRef.current, role: "user", text: query };
-    const { text, vessels, describe, confidence } = answerFor(query, locale, t, allVessels);
+    const { text, vessels, allMatched, describe, confidence } = answerFor(query, locale, t, allVessels);
     idRef.current += 1;
-    const aiMsg: ChatMessage = { id: idRef.current, role: "ai", text, vessels, describe, confidence };
+    const aiMsg: ChatMessage = { id: idRef.current, role: "ai", text, vessels, allMatched, describe, confidence };
     setMessages((prev) => [...prev, userMsg, aiMsg]);
     setInput("");
   }
@@ -327,13 +333,28 @@ export default function AIAgent() {
                               </button>
                             </div>
                           ))}
-                          <button
-                            onClick={() => exportCsv(m.vessels!)}
-                            className="mt-1 inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-[11px] font-medium text-ink-soft transition hover:border-brand-400 hover:text-brand-400"
-                          >
-                            <Download size={12} />
-                            {t("aiAgentExport")} ({m.vessels.length})
-                          </button>
+                          {(() => {
+                            const full = m.allMatched && m.allMatched.length ? m.allMatched : m.vessels!;
+                            const more = full.length - m.vessels!.length;
+                            return (
+                              <>
+                                {more > 0 && (
+                                  <p className="mt-1 text-[11px] italic text-ink-soft">
+                                    {locale === "vi"
+                                      ? `Hiển thị ${m.vessels!.length}/${full.length} tàu — bấm Xuất CSV để lấy đủ ${full.length}.`
+                                      : `Showing ${m.vessels!.length}/${full.length} — click Export CSV for all ${full.length}.`}
+                                  </p>
+                                )}
+                                <button
+                                  onClick={() => exportCsv(full)}
+                                  className="mt-1 inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-[11px] font-medium text-ink-soft transition hover:border-brand-400 hover:text-brand-400"
+                                >
+                                  <Download size={12} />
+                                  {t("aiAgentExport")} ({full.length})
+                                </button>
+                              </>
+                            );
+                          })()}
                         </div>
                       )}
                     </div>

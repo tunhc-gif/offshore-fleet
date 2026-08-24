@@ -230,7 +230,9 @@ const RANGE_PATTERNS: RegExp[] = [
   /(?:từ|between)?\s*(\d+(?:[.,]\d+)?)\s*(?:-|–|đến|to|and|tới)\s*(\d+(?:[.,]\d+)?)/i,
 ];
 
-const CLAUSE_SPLIT = /,|;|\bvà\b|\band\b|&/gi;
+// Split on comma/semicolon/& and the words "và"/"and". NOTE: \b fails around "và"
+// because "à" is not an ASCII word char, so match "và"/"and" delimited by spaces.
+const CLAUSE_SPLIT = /\s*,\s*|\s*;\s*|\s*&\s*|\s+và\s+|\s+and\s+/gi;
 
 function splitClauses(query: string): string[] {
   return query.split(CLAUSE_SPLIT).map((s) => s.trim()).filter(Boolean);
