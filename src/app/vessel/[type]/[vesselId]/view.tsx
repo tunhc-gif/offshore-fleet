@@ -43,7 +43,7 @@ export default function VesselDetailPage({
   params: { type: string; vesselId: string };
 }) {
   const { t, locale } = useLanguage();
-  const { getVessel, ready } = useVesselData();
+  const { getVessel, vesselsForType, ready } = useVesselData();
   const vessel = getVessel(params.vesselId);
 
   // While remote (Google Sheets) data is still loading, a vessel that exists only
@@ -56,7 +56,18 @@ export default function VesselDetailPage({
   }
 
   const imo = getCleanImo(vessel.idImo);
-  const defaultSpeed = averageSpeedKn(vessel.speedKn);
+  // Default speed: the vessel's own average of stated knots; if the spec has no
+  // speed, fall back to the average speed of the same vessel group (from the
+  // fleet), not a fixed number.
+  const ownAvgSpeed = averageSpeedKn(vessel.speedKn);
+  let groupAvgSpeed: number | null = null;
+  if (ownAvgSpeed === null) {
+    const peers = vesselsForType(vessel.category)
+      .map((v) => averageSpeedKn(v.speedKn))
+      .filter((n): n is number => n !== null);
+    if (peers.length) groupAvgSpeed = Math.round((peers.reduce((a, b) => a + b, 0) / peers.length) * 10) / 10;
+  }
+  const defaultSpeed = ownAvgSpeed ?? groupAvgSpeed;
   const photoMap = vesselPhotos as Record<string, string[]>;
   const photos =
     (imo && photoMap[imo]) ||
