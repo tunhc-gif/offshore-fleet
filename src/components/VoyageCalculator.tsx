@@ -238,8 +238,8 @@ export default function VoyageCalculator({ defaultSpeed }: { defaultSpeed: numbe
         <AlertTriangle size={12} className="mt-0.5 shrink-0 text-accent" />
         <span>
           {vi
-            ? "Tuyến biển tính bằng thuật toán né đất liền trên lưới ~0,1° (≈6 NM) — đã đi vòng qua đất liền/eo biển, sai số vài phần trăm so với phần mềm hải trình chuyên dụng (chưa mô hình hoá kênh đào Suez/Panama, dòng chảy, vùng cấm). Dùng để ước lượng nhanh."
-            : "Sea route computed by a land-avoiding algorithm on a ~0.1° (≈6 NM) grid — it goes around land/straits, within a few % of professional routing software (canals like Suez/Panama, currents and restricted zones not modelled). Quick estimate only."}
+            ? "Tuyến biển tính bằng thuật toán né đất liền (lưới 0,1° khu vực / 0,25° toàn cầu; đã khoét kênh Suez & Panama và các eo biển chính). Sai số vài phần trăm so với phần mềm hải trình chuyên dụng; CHƯA mô hình hoá dòng chảy và vùng cấm/TSS. Dùng để ước lượng nhanh."
+            : "Sea route via a land-avoiding algorithm (0.1° regional / 0.25° global grid; Suez & Panama canals and major straits carved open). Within a few % of professional routing software; currents and restricted zones/TSS are NOT modelled. Quick estimate only."}
         </span>
       </div>
     </div>
