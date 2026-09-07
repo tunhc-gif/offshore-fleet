@@ -1,0 +1,14 @@
+{
+  "name": "offshore-fleet-ai",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Provider-neutral LLM proxy (Gemini/Claude) for the Offshore Fleet AI Agent.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241106.0",
+    "wrangler": "^3.84.0"
+  }
+}

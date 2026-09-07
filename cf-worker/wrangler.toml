@@ -1,0 +1,18 @@
+name = "offshore-fleet-ai"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+
+# --- Provider & CORS (safe to commit; not secrets) -------------------------
+[vars]
+# Which model backend to use: "gemini" or "claude".
+PROVIDER = "gemini"
+# Origins allowed to call this Worker (comma-separated). Lock this to your site.
+ALLOWED_ORIGIN = "https://tunhc-gif.github.io"
+# Optional model overrides — set to the exact model id your API key can access.
+GEMINI_MODEL = "gemini-2.0-flash-lite"
+ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
+
+# --- Secrets (DO NOT put keys here) ----------------------------------------
+# Set them with wrangler instead so they are encrypted:
+#   npx wrangler secret put GEMINI_API_KEY
+#   npx wrangler secret put ANTHROPIC_API_KEY

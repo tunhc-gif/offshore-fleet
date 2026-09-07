@@ -40,6 +40,10 @@ jobs:
       - run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.base.outputs.path }}
+          # AI Agent LLM layer: set repo Variable AI_PROXY_URL (Settings →
+          # Secrets and variables → Actions → Variables) to your deployed
+          # Cloudflare Worker URL. Empty/unset ⇒ AI Agent stays offline/rule-based.
+          NEXT_PUBLIC_AI_PROXY_URL: ${{ vars.AI_PROXY_URL }}
 
       # SPA fallback so deep links to not-yet-generated paths still load.
       - run: cp out/index.html out/404.html

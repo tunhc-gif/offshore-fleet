@@ -18,6 +18,8 @@ import {
   Confidence,
 } from "@/lib/aiAgentQuery";
 import { detectField, detectMonth, matchVesselsToField, monthLabel } from "@/lib/aiAgentFieldMatch";
+import { llmParseToStructured, llmSummarize } from "@/lib/aiAgentLlm";
+import { AI_PROXY_ENABLED } from "@/config/aiProxy";
 import { DictKey, Locale } from "@/lib/i18n";
 
 type ChatMessage = {
@@ -28,6 +30,9 @@ type ChatMessage = {
   allMatched?: Vessel[];
   describe?: (v: Vessel) => string;
   confidence?: Confidence;
+  summary?: string; // grounded LLM prose (advisory), rendered above the cards
+  aiAssisted?: boolean; // the LLM parse layer produced this answer
+  pending?: boolean; // waiting on the LLM round-trip
 };
 
 function format(str: string, vars: Record<string, string | number>): string {
@@ -51,7 +56,7 @@ function keywordMatchReason(v: JubVessel, q: string): string {
 
 // `vessels` = the (capped) list shown in chat; `allMatched` = the FULL result set
 // used for CSV export so the file matches the headline count, not the display slice.
-type Answer = { text: string; vessels: Vessel[]; allMatched: Vessel[]; describe: (v: Vessel) => string; confidence: Confidence };
+type Answer = { text: string; vessels: Vessel[]; allMatched: Vessel[]; describe: (v: Vessel) => string; confidence: Confidence; source: "class" | "weather" | "structured" | "keyword" };
 
 const CLASS_ASK = /drydock|dry-dock|lên đà|len da|special survey|periodic survey|đăng kiểm định kỳ|còn class|con class|treo class|withdrawn|suspended|hết hạn|het han|class status|tình trạng class|tinh trang class|class certificate|chứng chỉ đăng kiểm|giấy chứng nhận class/i;
 
@@ -68,6 +73,7 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
       vessels: [],
       allMatched: [],
       describe: () => "",
+      source: "class",
       confidence: {
         level: "low",
         reasonVi: "Thông tin class/drydock không lưu trên nền tảng — tra trực tiếp từ đăng kiểm theo IMO.",
@@ -91,6 +97,7 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
       allMatched: result.rows.map((r) => r.vessel),
       describe: (v) => `${tt("aiAgentDowntimeShort")} ${dtByVessel.get(v.id) ?? "?"}% · ${v.idType}`,
       confidence: result.confidence,
+      source: "weather",
     };
   }
 
@@ -111,6 +118,7 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
       allMatched: vessels as Vessel[],
       describe: structured.describe as (v: Vessel) => string,
       confidence: isRegion ? regionConfidence(vessels.length) : structuredConfidence(structured),
+      source: "structured",
     };
   }
 
@@ -118,7 +126,38 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
   const ql = query.trim().toLowerCase();
   const foundAll = allVessels.filter((v) => vesselHaystack(v).includes(ql));
   const text = foundAll.length > 0 ? format(tt("aiAgentFoundKeyword"), { n: foundAll.length, query }) : format(tt("aiAgentNoneKeyword"), { query });
-  return { text, vessels: foundAll.slice(0, 8), allMatched: foundAll, describe: (v) => keywordMatchReason(v, query), confidence: keywordConfidence(foundAll.length) };
+  return { text, vessels: foundAll.slice(0, 8), allMatched: foundAll, describe: (v) => keywordMatchReason(v, query), confidence: keywordConfidence(foundAll.length), source: "keyword" };
+}
+
+// Build a chat Answer from an LLM-parsed StructuredResult (same shape/branch as
+// the deterministic structured path, so rendering & CSV behave identically).
+function answerFromLlm(
+  result: import("@/lib/aiAgentQuery").StructuredResult,
+  canonical: string,
+  locale: Locale,
+  tt: (key: DictKey) => string
+): Answer {
+  const { conditions, sort, vessels } = result;
+  const condText = conditions.map((c) => conditionLabel(c, locale)).join("; ");
+  const sortText = sort ? format(tt("aiAgentSortNote"), { sort: sortLabel(sort, locale) }) : "";
+  const label = condText || (canonical ? canonical : sort ? sortLabel(sort, locale) : "");
+  const isRegion = hasRegionCondition(conditions);
+  const base =
+    vessels.length > 0
+      ? format(tt("aiAgentFoundMulti"), { n: vessels.length, conditions: label })
+      : format(tt("aiAgentNoneMulti"), { conditions: label });
+  return {
+    text: (canonical ? `“${canonical}” → ` : "") + base + sortText,
+    vessels: vessels.slice(0, isRegion ? 30 : 12) as Vessel[],
+    allMatched: vessels as Vessel[],
+    describe: result.describe as (v: Vessel) => string,
+    confidence: isRegion ? regionConfidence(vessels.length) : structuredConfidence(result),
+    source: "structured",
+  };
+}
+
+function answerToMsg(a: Answer): Pick<ChatMessage, "text" | "vessels" | "allMatched" | "describe" | "confidence"> {
+  return { text: a.text, vessels: a.vessels, allMatched: a.allMatched, describe: a.describe, confidence: a.confidence };
 }
 
 const CONF_STYLE: Record<Confidence["level"], string> = {
@@ -176,16 +215,63 @@ export default function AIAgent() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages]);
 
-  function send(raw: string) {
+  async function send(raw: string) {
     const query = raw.trim();
     if (!query) return;
     idRef.current += 1;
     const userMsg: ChatMessage = { id: idRef.current, role: "user", text: query };
-    const { text, vessels, allMatched, describe, confidence } = answerFor(query, locale, t, allVessels);
     idRef.current += 1;
-    const aiMsg: ChatMessage = { id: idRef.current, role: "ai", text, vessels, allMatched, describe, confidence };
-    setMessages((prev) => [...prev, userMsg, aiMsg]);
+    const aiId = idRef.current;
+
+    const local = answerFor(query, locale, t, allVessels);
+    const localSolid =
+      local.source === "class" ||
+      local.source === "weather" ||
+      (local.source === "structured" && local.allMatched.length > 0);
+
+    // No proxy, or the offline engine already answered well → render immediately.
+    if (!AI_PROXY_ENABLED || localSolid) {
+      const aiMsg: ChatMessage = { id: aiId, role: "ai", ...answerToMsg(local) };
+      setMessages((prev) => [...prev, userMsg, aiMsg]);
+      setInput("");
+      return;
+    }
+
+    // Weak local result + proxy available → show a thinking bubble, ask the LLM to
+    // reinterpret the question, then filter through the SAME deterministic engine.
+    const pending: ChatMessage = { id: aiId, role: "ai", text: t("aiAgentThinking"), pending: true };
+    setMessages((prev) => [...prev, userMsg, pending]);
     setInput("");
+
+    let finalMsg: ChatMessage = { id: aiId, role: "ai", ...answerToMsg(local) };
+    try {
+      const llm = await llmParseToStructured(query, locale, allVessels);
+      if (llm.status === "ok" && llm.result.vessels.length > 0) {
+        const ans = answerFromLlm(llm.result, llm.canonical, locale, t);
+        finalMsg = { id: aiId, role: "ai", ...answerToMsg(ans), aiAssisted: true };
+        const condText = llm.result.conditions.map((c) => conditionLabel(c, locale)).join("; ");
+        const summary = await llmSummarize(query, locale, ans.allMatched, condText || llm.canonical);
+        if (summary) finalMsg = { ...finalMsg, summary };
+      } else if (llm.status === "unknown" && local.allMatched.length === 0) {
+        // The model understood but this can't be answered from stored data, and the
+        // local engine found nothing either → say so honestly instead of guessing.
+        finalMsg = {
+          id: aiId,
+          role: "ai",
+          text: t("aiAgentUnknown"),
+          aiAssisted: true,
+          confidence: {
+            level: "low",
+            reasonVi: "Câu hỏi nằm ngoài dữ liệu nền tảng lưu, hoặc chưa đủ thông tin để lọc chính xác.",
+            reasonEn: "Outside the data the platform stores, or not enough to filter precisely.",
+          },
+        };
+      }
+      // llm.status === "error" (or unknown-but-local-found-something) → keep local fallback
+    } catch {
+      // network/parse failure → keep the deterministic local fallback
+    }
+    setMessages((prev) => prev.map((m) => (m.id === aiId ? finalMsg : m)));
   }
 
   function toggleCompare(v: Vessel) {
@@ -294,7 +380,14 @@ export default function AIAgent() {
                           : "max-w-[94%] rounded-2xl rounded-bl-sm border border-border bg-surface-3 px-3 py-2 text-sm text-ink"
                       }
                     >
-                      <p>{m.text}</p>
+                      <p className={m.pending ? "animate-pulse text-ink-soft" : undefined}>{m.text}</p>
+
+                      {m.role === "ai" && m.aiAssisted && (
+                        <div className="mt-1.5 inline-flex items-center gap-1 rounded-full border border-brand-500/40 bg-brand-500/10 px-2 py-0.5 text-[11px] font-semibold text-brand-400">
+                          <Bot size={11} />
+                          {t("aiAgentAiTag")}
+                        </div>
+                      )}
 
                       {m.role === "ai" && m.confidence && (
                         <div className={`mt-2 inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-[11px] font-semibold ${CONF_STYLE[m.confidence.level]}`}>
@@ -305,6 +398,14 @@ export default function AIAgent() {
                       )}
                       {m.role === "ai" && m.confidence && (
                         <p className="mt-1 text-[11px] italic text-ink-soft">{locale === "vi" ? m.confidence.reasonVi : m.confidence.reasonEn}</p>
+                      )}
+
+                      {m.role === "ai" && m.summary && (
+                        <div className="mt-2 rounded-lg border border-brand-500/30 bg-brand-500/5 px-2.5 py-2">
+                          <p className="text-[11px] font-semibold uppercase tracking-wide text-brand-400">{t("aiAgentSummaryTitle")}</p>
+                          <p className="mt-1 whitespace-pre-line text-[13px] text-ink">{m.summary}</p>
+                          <p className="mt-1.5 text-[10px] italic text-ink-soft">{t("aiAgentGroundedNote")}</p>
+                        </div>
                       )}
 
                       {m.vessels && m.vessels.length > 0 && (
@@ -429,7 +530,7 @@ export default function AIAgent() {
             </form>
 
             <div className="border-t border-border px-4 py-2">
-              <p className="text-[11px] text-ink-soft">{t("aiAgentFooter")}</p>
+              <p className="text-[11px] text-ink-soft">{AI_PROXY_ENABLED ? t("aiAgentFooterLlm") : t("aiAgentFooter")}</p>
             </div>
           </div>
         </div>

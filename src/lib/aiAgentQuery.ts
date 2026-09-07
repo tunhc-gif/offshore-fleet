@@ -545,16 +545,10 @@ export type StructuredResult = {
   describe: (v: JubVessel) => string;
 };
 
-/** Parses clauses into conditions (numeric / range / dp / category), AND-filters, and sorts. */
-export function parseStructuredQuery(query: string, vessels: JubVessel[]): StructuredResult | null {
-  const clauses = splitClauses(query);
-  const conditions: Condition[] = [];
-  for (const clause of clauses) {
-    for (const cond of detectClauseConditions(clause)) conditions.push(cond);
-  }
-  const sort = detectSort(query);
-  if (conditions.length === 0 && !sort) return null;
-
+/** Filters + sorts a set of already-built conditions and packages the StructuredResult.
+ *  Shared by the regex parser (parseStructuredQuery) and the LLM-spec builder
+ *  (structuredFromSpecs) so both paths filter data through the exact same engine. */
+function assembleResult(conditions: Condition[], sort: SortSpec | null, vessels: JubVessel[]): StructuredResult {
   let matched = conditions.reduce((acc, cond) => applyCondition(acc, cond), vessels);
 
   // Data coverage across numeric/range fields (how many vessels even carry the data).
@@ -588,6 +582,126 @@ export function parseStructuredQuery(query: string, vessels: JubVessel[]): Struc
   };
 
   return { conditions, sort, vessels: matched, coverage, describe };
+}
+
+/** Parses clauses into conditions (numeric / range / dp / category), AND-filters, and sorts. */
+export function parseStructuredQuery(query: string, vessels: JubVessel[]): StructuredResult | null {
+  const clauses = splitClauses(query);
+  const conditions: Condition[] = [];
+  for (const clause of clauses) {
+    for (const cond of detectClauseConditions(clause)) conditions.push(cond);
+  }
+  const sort = detectSort(query);
+  if (conditions.length === 0 && !sort) return null;
+  return assembleResult(conditions, sort, vessels);
+}
+
+// ==========================================================================
+// LLM-assisted parsing — the model NEVER supplies vessel data. It only maps a
+// natural-language question onto this fixed, allow-listed schema of conditions;
+// every field/token is validated here and unknown ones are dropped, and all
+// numbers are still read from the dataset by the same engine as the regex path.
+// ==========================================================================
+
+/** Schema advertised to the model: the ONLY fields/tokens it may reference. */
+export const AI_SCHEMA = {
+  numericFields: FIELD_CONFIGS.filter((f, i) => FIELD_CONFIGS.findIndex((g) => g.field === f.field) === i).map((f) => ({
+    field: f.field as string,
+    labelVi: f.labelVi,
+    labelEn: f.labelEn,
+    unit: f.unit ?? null,
+  })),
+  operators: [">", ">=", "<", "<=", "="] as Operator[],
+  typeTokens: TYPE_CONFIGS.map((c) => ({ token: c.token, labelVi: c.labelVi })),
+  capabilityTokens: CAPABILITY_CONFIGS.map((c) => ({ token: c.token, labelVi: c.labelVi })),
+  regionTokens: REGION_CONFIGS.map((c) => ({ token: c.token, labelVi: c.labelVi })),
+  flagTokens: FLAG_CONFIGS.map((c) => ({ token: c.token, labelVi: c.labelVi })),
+  dpDigits: ["1", "2", "3"],
+};
+
+const NUMERIC_FIELD_SET = new Set(FIELD_CONFIGS.map((f) => f.field as string));
+const VALID_OPERATORS = new Set<string>([">", ">=", "<", "<=", "="]);
+
+export type LlmConditionSpec =
+  | { kind: "numeric"; field: string; operator: string; value: number }
+  | { kind: "range"; field: string; min: number; max: number }
+  | { kind: "dp"; digit: string }
+  | { kind: "type" | "capability" | "region" | "flag"; token: string };
+
+export type LlmSortSpec = { field: string; dir: "asc" | "desc" } | null;
+
+function fieldConfigFor(field: string): FieldConfig | null {
+  // Prefer the first (most specific) config for the field name.
+  return FIELD_CONFIGS.find((f) => f.field === field) ?? null;
+}
+
+/** Turns ONE validated spec into a real engine Condition, or null if it references
+ *  anything outside the allow-list (so a hallucinated field/token is simply ignored). */
+export function conditionFromSpec(spec: LlmConditionSpec): Condition | null {
+  if (!spec || typeof spec !== "object") return null;
+  switch (spec.kind) {
+    case "numeric": {
+      if (!NUMERIC_FIELD_SET.has(spec.field) || !VALID_OPERATORS.has(spec.operator)) return null;
+      if (typeof spec.value !== "number" || !Number.isFinite(spec.value)) return null;
+      const cfg = fieldConfigFor(spec.field)!;
+      return { type: "numeric", match: { field: cfg.field, fieldLabelVi: cfg.labelVi, fieldLabelEn: cfg.labelEn, operator: spec.operator as Operator, value: spec.value, unit: cfg.unit } };
+    }
+    case "range": {
+      if (!NUMERIC_FIELD_SET.has(spec.field)) return null;
+      if (![spec.min, spec.max].every((n) => typeof n === "number" && Number.isFinite(n)) || spec.max <= spec.min) return null;
+      const cfg = fieldConfigFor(spec.field)!;
+      return { type: "range", match: { field: cfg.field, fieldLabelVi: cfg.labelVi, fieldLabelEn: cfg.labelEn, min: spec.min, max: spec.max, unit: cfg.unit } };
+    }
+    case "dp": {
+      if (!AI_SCHEMA.dpDigits.includes(String(spec.digit))) return null;
+      return { type: "dp", digit: String(spec.digit) };
+    }
+    case "type": {
+      const cfg = TYPE_CONFIGS.find((c) => c.token === spec.token);
+      if (!cfg) return null;
+      return {
+        type: "category", kind: "type", token: cfg.token, labelVi: `loại ${cfg.labelVi}`, labelEn: `${cfg.labelEn} type`,
+        test: (v) => {
+          const vv = v as Vessel;
+          const inCat = cfg.categories.includes(String(vv.category));
+          const inType = cfg.typeKeywords.some((kw) => String(v.idType).toLowerCase().includes(kw));
+          return inCat || inType;
+        },
+      };
+    }
+    case "capability": {
+      const cfg = CAPABILITY_CONFIGS.find((c) => c.token === spec.token);
+      if (!cfg) return null;
+      return { type: "category", kind: "capability", token: cfg.token, labelVi: cfg.labelVi, labelEn: cfg.labelEn, test: (v) => cfg.signals.test(capabilityHaystack(v)) };
+    }
+    case "region": {
+      const cfg = REGION_CONFIGS.find((c) => c.token === spec.token);
+      if (!cfg) return null;
+      return { type: "category", kind: "region", token: cfg.token, labelVi: cfg.labelVi, labelEn: cfg.labelEn, test: (v) => { const hay = regionHaystack(v); return cfg.signals.some((s) => hay.includes(s)); } };
+    }
+    case "flag": {
+      const cfg = FLAG_CONFIGS.find((c) => c.token === spec.token);
+      if (!cfg) return null;
+      return { type: "category", kind: "flag", token: cfg.token, labelVi: cfg.labelVi, labelEn: cfg.labelEn, test: (v) => cfg.match.some((m) => String(v.idFlag).toLowerCase().includes(m)) };
+    }
+    default:
+      return null;
+  }
+}
+
+function sortFromSpec(sort: LlmSortSpec): SortSpec | null {
+  if (!sort || !NUMERIC_FIELD_SET.has(sort.field) || (sort.dir !== "asc" && sort.dir !== "desc")) return null;
+  const cfg = fieldConfigFor(sort.field)!;
+  return { field: cfg.field, labelVi: cfg.labelVi, labelEn: cfg.labelEn, unit: cfg.unit, dir: sort.dir };
+}
+
+/** Builds a StructuredResult from validated LLM specs, filtering through the SAME
+ *  engine as the regex path. Returns null if nothing valid survived validation. */
+export function structuredFromSpecs(specs: LlmConditionSpec[], sortSpec: LlmSortSpec, vessels: JubVessel[]): StructuredResult | null {
+  const conditions = (Array.isArray(specs) ? specs : []).map(conditionFromSpec).filter((c): c is Condition => c !== null);
+  const sort = sortFromSpec(sortSpec);
+  if (conditions.length === 0 && !sort) return null;
+  return assembleResult(conditions, sort, vessels);
 }
 
 // Backward-compatible name used elsewhere.
