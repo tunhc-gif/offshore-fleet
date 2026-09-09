@@ -12,7 +12,7 @@ export default function SiteBackground() {
       <div
         aria-hidden
         className="site-bg"
-        style={{ backgroundImage: `url("${asset("/brand/ptsc-guardian-bg.webp")}")` }}
+        style={{ backgroundImage: `url("${asset("/brand/ptsc-guardian-bg.webp")}?v=3")` }}
       />
       <div aria-hidden className="site-bg-scrim" />
     </>

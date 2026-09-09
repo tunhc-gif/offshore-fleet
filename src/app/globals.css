@@ -126,8 +126,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  filter: blur(2.5px) saturate(1.08);
-  transform: scale(1.04);
+  filter: saturate(1.08);
   pointer-events: none;
 }
 
@@ -141,11 +140,24 @@ body {
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--surface) 58%, transparent) 0%,
-      color-mix(in srgb, var(--surface) 38%, transparent) 40%,
-      color-mix(in srgb, var(--surface) 44%, transparent) 100%
+      color-mix(in srgb, var(--surface) 42%, transparent) 0%,
+      color-mix(in srgb, var(--surface) 22%, transparent) 45%,
+      color-mix(in srgb, var(--surface) 28%, transparent) 100%
     );
   pointer-events: none;
+}
+
+/* Soft frosted panel behind the hero text only, so the background photo can stay
+   crisp everywhere else while the hero title/subtitle remain fully readable. */
+.hero-veil {
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--surface) 82%, transparent) 0%,
+    color-mix(in srgb, var(--surface) 70%, transparent) 55%,
+    transparent 100%
+  );
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 /* Dark themes need a heavier veil for contrast (dark surface over a bright sea). */
@@ -155,9 +167,9 @@ body {
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--surface) 72%, transparent) 0%,
-      color-mix(in srgb, var(--surface) 55%, transparent) 45%,
-      color-mix(in srgb, var(--surface) 62%, transparent) 100%
+      color-mix(in srgb, var(--surface) 60%, transparent) 0%,
+      color-mix(in srgb, var(--surface) 44%, transparent) 45%,
+      color-mix(in srgb, var(--surface) 52%, transparent) 100%
     );
 }
 
