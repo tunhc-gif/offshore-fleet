@@ -126,8 +126,8 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  filter: blur(7px) saturate(1.05);
-  transform: scale(1.06);
+  filter: blur(2.5px) saturate(1.08);
+  transform: scale(1.04);
   pointer-events: none;
 }
 
@@ -141,9 +141,9 @@ body {
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--surface) 78%, transparent) 0%,
-      color-mix(in srgb, var(--surface) 62%, transparent) 40%,
-      color-mix(in srgb, var(--surface) 66%, transparent) 100%
+      color-mix(in srgb, var(--surface) 58%, transparent) 0%,
+      color-mix(in srgb, var(--surface) 38%, transparent) 40%,
+      color-mix(in srgb, var(--surface) 44%, transparent) 100%
     );
   pointer-events: none;
 }
@@ -155,9 +155,9 @@ body {
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--surface) 86%, transparent) 0%,
-      color-mix(in srgb, var(--surface) 74%, transparent) 45%,
-      color-mix(in srgb, var(--surface) 80%, transparent) 100%
+      color-mix(in srgb, var(--surface) 72%, transparent) 0%,
+      color-mix(in srgb, var(--surface) 55%, transparent) 45%,
+      color-mix(in srgb, var(--surface) 62%, transparent) 100%
     );
 }
 
