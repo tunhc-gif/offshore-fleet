@@ -99,9 +99,15 @@
   --accent: #ff5da2;
 }
 
-html,
-body {
+/* html carries the opaque surface colour as the ultimate fallback (shown if the
+   background image ever fails to load). body is kept TRANSPARENT so the fixed
+   <SiteBackground/> layers behind it remain visible on every page. */
+html {
   background-color: var(--surface);
+  color: var(--ink);
+}
+body {
+  background-color: transparent;
   color: var(--ink);
 }
 
@@ -109,23 +115,50 @@ body {
   border-color: var(--border-color);
 }
 
-/* Brand imagery: PTSC Guardian offshore vessel, fixed behind every screen.
-   A top-to-bottom white scrim keeps long data tables readable further down the page. */
-body {
-  background-image:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(245, 247, 251, 0.55) 35%, rgba(245, 247, 251, 0.88) 100%),
-    url("/brand/ptsc-guardian-bg.webp");
+/* Brand imagery: PTSC Guardian (DLB) + two tugs, fixed behind every screen.
+   Rendered by <SiteBackground/> as two viewport-fixed layers BEHIND all content:
+   the blurred photo, then a theme-coloured scrim so text/cards stay readable.
+   The image is blurred and slightly over-scaled so the blur never bares an edge. */
+.site-bg {
+  position: fixed;
+  inset: -28px;
+  z-index: -2;
   background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
+  background-position: center center;
   background-repeat: no-repeat;
+  filter: blur(7px) saturate(1.05);
+  transform: scale(1.06);
+  pointer-events: none;
 }
 
-[data-theme="ocean"] body,
-[data-theme="sunset"] body,
-[data-theme="emerald"] body,
-[data-theme="slate"] body {
-  background-image: none;
+.site-bg-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  /* A soft veil: strongest at the top (behind the hero text) easing to a lighter
+     wash lower down, so the photo reads as a real background while text stays
+     crisp. Cards carry their own opaque surface, so body text is unaffected. */
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface) 78%, transparent) 0%,
+      color-mix(in srgb, var(--surface) 62%, transparent) 40%,
+      color-mix(in srgb, var(--surface) 66%, transparent) 100%
+    );
+  pointer-events: none;
+}
+
+/* Dark themes need a heavier veil for contrast (dark surface over a bright sea). */
+[data-theme="ocean"] .site-bg-scrim,
+[data-theme="sunset"] .site-bg-scrim,
+[data-theme="emerald"] .site-bg-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface) 86%, transparent) 0%,
+      color-mix(in srgb, var(--surface) 74%, transparent) 45%,
+      color-mix(in srgb, var(--surface) 80%, transparent) 100%
+    );
 }
 
 @layer base {

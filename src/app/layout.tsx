@@ -4,6 +4,7 @@ import Providers from "@/components/Providers";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AIAgent from "@/components/AIAgent";
+import SiteBackground from "@/components/SiteBackground";
 
 export const metadata: Metadata = {
   title: "Offshore Fleet Platform",
@@ -13,7 +14,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-surface text-ink font-sans antialiased">
+      <body className="min-h-screen text-ink font-sans antialiased">
+        <SiteBackground />
         <Providers>
           <div className="relative flex min-h-screen flex-col bg-grid">
             <Header />
