@@ -14,7 +14,7 @@ export default function BlockCard({ href, icon: Icon, title, desc, accent, badge
   return (
     <Link
       href={href}
-      className="group relative flex flex-col justify-between overflow-hidden rounded-xl2 border border-border bg-surface-2 p-6 shadow-card transition hover:-translate-y-1 hover:border-brand-500"
+      className="glass-card group relative flex flex-col justify-between overflow-hidden rounded-xl2 p-6 transition hover:-translate-y-1 hover:shadow-2xl"
     >
       <span className="absolute -right-8 -top-8 h-28 w-28 rotate-45 bg-brand-500/10 transition group-hover:bg-accent/15" />
       <div className="relative z-10">
