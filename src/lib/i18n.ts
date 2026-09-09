@@ -9,6 +9,7 @@ const dict = {
   vi: {
     appName: "OFFSHORE FLEET PLATFORM",
     tagline: "Nền tảng dữ liệu tàu, vùng biển & thời tiết vận hành ngoài khơi",
+    qrMobileLabel: "Quét để mở trên điện thoại",
     heroTitle: "OFFSHORE FLEET PLATFORM",
     heroSubtitle:
       "Tổng hợp thông số kỹ thuật tàu, vùng hoạt động ngoài khơi và giới hạn thời tiết vận hành ở một nơi duy nhất.",
@@ -196,6 +197,7 @@ const dict = {
   en: {
     appName: "OFFSHORE FLEET PLATFORM",
     tagline: "Vessel, offshore area & weather-downtime data platform",
+    qrMobileLabel: "Scan to open on mobile",
     heroTitle: "OFFSHORE FLEET PLATFORM",
     heroSubtitle:
       "Vessel specifications, offshore operating areas and weather operability limits, all in one place.",
