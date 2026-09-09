@@ -262,7 +262,7 @@ export default function WeatherDowntimePage() {
 
       {/* Default limits reference */}
       <div className="mb-2 flex items-center gap-2">
-        <h2 className="brand-headline text-sm text-ink">{t("wdDefaultLimits")}</h2>
+        <h2 className="brand-headline text-on-photo text-sm text-ink">{t("wdDefaultLimits")}</h2>
         <span
           className="inline-flex items-center gap-1 rounded-full bg-surface-3 px-2 py-0.5 text-[10px] font-medium text-ink-soft"
           title={limitsRemote ? t("wdLimitsLiveHint") : t("wdLimitsBundledHint")}
@@ -271,7 +271,7 @@ export default function WeatherDowntimePage() {
           {limitsRemote ? t("dataSourceLive") : t("dataSourceBundled")}
         </span>
       </div>
-      <p className="mb-3 text-xs text-ink-soft">{t("wdDefaultLimitsNote")}</p>
+      <p className="text-on-photo mb-3 text-xs font-medium text-ink-soft">{t("wdDefaultLimitsNote")}</p>
       <div className="mb-8 overflow-x-auto rounded-xl2 border border-border bg-surface-2">
         <table className="w-full border-collapse text-xs">
           <thead>
@@ -309,7 +309,7 @@ export default function WeatherDowntimePage() {
 
       {/* Register */}
       <div className="mb-3 flex items-center justify-between">
-        <h2 className="brand-headline text-sm text-ink">{t("wdRegister")}</h2>
+        <h2 className="brand-headline text-on-photo text-sm text-ink">{t("wdRegister")}</h2>
         <div className="flex items-center gap-2">
           <button
             onClick={() => exportWeatherDowntimeXls(rows, vesselsByType, limitsByType, mechConfig, locale)}

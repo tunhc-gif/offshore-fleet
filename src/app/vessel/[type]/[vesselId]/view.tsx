@@ -134,7 +134,7 @@ export default function VesselDetailPage({
 
       <Link
         href={`/weather-downtime?type=${params.type}&vessel=${vessel.id}`}
-        className="group mb-6 flex items-center justify-between gap-3 rounded-xl2 border border-accent/40 bg-accent/10 p-5 shadow-card transition hover:border-accent"
+        className="cta-accent group mb-6 flex items-center justify-between gap-3 rounded-xl2 p-5 transition hover:border-accent"
       >
         <div className="flex items-start gap-3">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-white">

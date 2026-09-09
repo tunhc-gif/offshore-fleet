@@ -104,7 +104,7 @@ export default function FieldDetailPage({
       />
 
       {field.sample && (
-        <div className="mb-5 flex items-start gap-2 rounded-xl border border-accent/40 bg-accent/10 px-4 py-3 text-xs text-ink">
+        <div className="cta-accent mb-5 flex items-start gap-2 rounded-xl px-4 py-3 text-xs text-ink">
           <AlertTriangle size={15} className="mt-0.5 shrink-0 text-accent" />
           <span>{t("sampleDataBanner")}</span>
         </div>

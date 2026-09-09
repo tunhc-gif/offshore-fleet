@@ -171,12 +171,25 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid color-mix(in srgb, #ffffff 60%, transparent);
 }
+/* Accent call-out (e.g. the Weather Downtime CTA, sample-data banners) that sits
+   DIRECTLY over the vivid photo. Opaque surface with a faint accent tint + blur
+   so its text is readable while keeping the red identity. Theme-aware. */
+.cta-accent {
+  background-color: color-mix(in srgb, var(--surface) 90%, var(--accent));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  box-shadow: 0 8px 26px rgba(11, 44, 76, 0.14);
+}
+
 /* Soft surface-coloured halo so text placed directly on the vivid photo (page
    titles/subtitles) stays legible without veiling the image. */
 .text-on-photo {
   text-shadow:
-    0 1px 2px color-mix(in srgb, var(--surface) 80%, transparent),
-    0 2px 12px color-mix(in srgb, var(--surface) 70%, transparent);
+    0 0 4px var(--surface),
+    0 0 10px var(--surface),
+    0 1px 3px color-mix(in srgb, var(--surface) 92%, transparent),
+    0 2px 16px color-mix(in srgb, var(--surface) 82%, transparent);
 }
 /* Dark themes: glass reads as tinted-dark rather than washed-white. */
 [data-theme="ocean"] .glass-card,
