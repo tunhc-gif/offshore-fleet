@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Anchor } from "lucide-react";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import QRButton from "@/components/QRButton";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Header() {
@@ -26,6 +27,7 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center gap-2">
+          <QRButton />
           <ThemeSwitcher />
           <LanguageSwitcher />
         </div>

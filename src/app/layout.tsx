@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AIAgent from "@/components/AIAgent";
 import SiteBackground from "@/components/SiteBackground";
-import QRWidget from "@/components/QRWidget";
 
 export const metadata: Metadata = {
   title: "Offshore Fleet Platform",
@@ -23,7 +22,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <main className="mx-auto flex-1 w-full max-w-6xl px-4 pb-24 pt-6 sm:px-6">{children}</main>
             <Footer />
             <AIAgent />
-            <QRWidget />
           </div>
         </Providers>
       </body>
