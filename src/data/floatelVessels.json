@@ -2274,7 +2274,7 @@
   {
     "id": "aesen-3305",
     "displayName": "AESEN 3305",
-    "nameNote": "ex EOS 3305; 330FT x 120FT x 20FT BALLASTABLE BARGE",
+    "nameNote": "ex EOS 3305; 330FT x 120FT x 20FT BALLASTABLE BARGE. Ballastable barge 330x120x20 ft. GRT 5.844 / NT 1.753; 8 khoang ballast (2 main + 2 swash); SMIT towing bracket 200T. Chủ: Aesen Group.",
     "idName": "AESEN 3305",
     "idType": "Ballastable Barge (Cargo Barge)",
     "idOwner": "Không tìm thấy",
@@ -2361,7 +2361,7 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "AESEN 3305 (exEOS 3305).Vsl Specs.r06.2025.pdf",
     "srcDate": "r06.2025",
-    "cargoDeckArea": "Không tìm thấy",
+    "cargoDeckArea": "sức chịu boong 15 t/m²",
     "speedKn": "Không tìm thấy",
     "bollardPullT": "Không tìm thấy",
     "dwt": "13,481 T"
@@ -2369,7 +2369,7 @@
   {
     "id": "eos-282",
     "displayName": "EOS 282",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Flat-top deck cargo barge. GRT 3.405 / NT 1.022; 4 SMIT towing bracket; neo 1.920 kg. Chủ: Aesen Group.",
     "idName": "EOS 282",
     "idType": "Flat-Top Deck Cargo Barge",
     "idOwner": "Không tìm thấy",
@@ -2456,7 +2456,7 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "EOS 282.Vsl Specs.r05.2025.pdf",
     "srcDate": "r05.2025",
-    "cargoDeckArea": "Không tìm thấy",
+    "cargoDeckArea": "sức chịu boong 20 t/m²",
     "speedKn": "Không tìm thấy",
     "bollardPullT": "Không tìm thấy",
     "dwt": "7,886 T"
@@ -2464,7 +2464,7 @@
   {
     "id": "mutiara-280",
     "displayName": "MUTIARA 280",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Flat-top deck cargo & ballast barge. GRT 3.374 / NT 1.012; 32 khoang kín nước; neo 1 x 1.530 kg. Chủ: Tiong Woon Offshore.",
     "idName": "MUTIARA 280",
     "idType": "Flat Top Deck Cargo & Ballast Tank Barge",
     "idOwner": "Tiong Woon Offshore Pte. Ltd. (a member of Tiong Woon Corporation Holding Ltd)",
@@ -2551,7 +2551,7 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "7. MUTIARA 280 Specification.pdf",
     "srcDate": "Updated on 15th March 2023",
-    "cargoDeckArea": "Không tìm thấy",
+    "cargoDeckArea": "sức chịu boong 20 t/m²",
     "speedKn": "Không tìm thấy",
     "bollardPullT": "Không áp dụng",
     "dwt": "Approx. 7,702 Tons"
