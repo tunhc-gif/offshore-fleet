@@ -660,7 +660,7 @@
   {
     "id": "m-v-hai-duong-01",
     "displayName": "M/V HAI DUONG 01",
-    "nameNote": "Lực đẩy: Self propelled — Đối chiếu tên/spec 65m x 16m, đóng 2014 và hồ sơ AIS. — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có.",
+    "nameNote": "Lực đẩy: Self propelled — Đối chiếu tên/spec 65m x 16m, đóng 2014 và hồ sơ AIS. — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có. AHTS, DP2, bollard pull 84,2T (Haduco).",
     "idName": "M/V Hai Duong 01",
     "idType": "Tàu tiếp vận (Supply Boat)",
     "idOwner": "HADUCO",
@@ -747,18 +747,19 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
     "srcDate": "01/12/2025",
-    "cargoDeckArea": "435 m² (7.5 T/m²)"
+    "cargoDeckArea": "435 m² (7.5 T/m²)",
+    "bollardPullT": "84,2 t"
   },
   {
     "id": "ossoy",
     "displayName": "OSSOY",
-    "nameNote": "Lực đẩy: Self Propelled — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có.",
+    "nameNote": "Lực đẩy: Self Propelled — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có. AHTS/Tug Supply, BV, DynaPos, đóng 2015.",
     "idName": "Ossoy",
     "idType": "Tàu tiếp vận (Supply Boat)",
     "idOwner": "Không tìm thấy",
     "idFlag": "Liberia",
     "idPort": "Không tìm thấy",
-    "idClassSociety": "Không tìm thấy",
+    "idClassSociety": "Bureau Veritas (BV), Tug/Supply AH, DynaPos",
     "idNotation": "Không tìm thấy",
     "idImo": "9701102",
     "idCallsign": "Không tìm thấy",
