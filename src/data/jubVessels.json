@@ -88,7 +88,8 @@
     "srcDate": "08-JUL-2026",
     "id": "qms-achiever",
     "displayName": "QMS ACHIEVER",
-    "nameNote": ""
+    "nameNote": "",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "QMS BANI YAS",
@@ -179,7 +180,8 @@
     "srcDate": "2026-07-08",
     "id": "qms-bani-yas",
     "displayName": "QMS BANI YAS",
-    "nameNote": ""
+    "nameNote": "",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "QMS GLADIATOR",
@@ -270,7 +272,8 @@
     "srcDate": "2026-07-08",
     "id": "qms-gladiator",
     "displayName": "QMS GLADIATOR",
-    "nameNote": ""
+    "nameNote": "",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "MARWA (tên đăng ký gốc trong Operation Manual: MATSU; đổi tên/treo cờ lại sau này)",
@@ -361,7 +364,8 @@
     "srcDate": "2026-07-08",
     "id": "qms-marwa",
     "displayName": "QMS MARWA",
-    "nameNote": "Tên đăng ký gốc trong Operation Manual: MATSU (đã đổi tên/chủ/cờ)."
+    "nameNote": "Tên đăng ký gốc trong Operation Manual: MATSU (đã đổi tên/chủ/cờ).",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "QMS NOUF",
@@ -452,7 +456,8 @@
     "srcDate": "2026-07-08",
     "id": "qms-nouf",
     "displayName": "QMS NOUF",
-    "nameNote": ""
+    "nameNote": "",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "QMS SENTINEL",
@@ -543,7 +548,8 @@
     "srcDate": "2026-07-08",
     "id": "qms-sentinel",
     "displayName": "QMS SENTINEL",
-    "nameNote": ""
+    "nameNote": "",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "SUNRISE PIONEER (tên gốc theo tài liệu/đăng kiểm ban đầu; tên hiện tại theo hồ sơ khai thác là QMS SHAHAMA — tài liệu chưa được cập nhật sau khi đổi tên/chủ)",
@@ -634,7 +640,8 @@
     "srcDate": "2026-07-08",
     "id": "qms-shahama",
     "displayName": "QMS SHAHAMA",
-    "nameNote": "Tên gốc trong Operation Manual: Sunrise Pioneer (tài liệu chưa cập nhật tên/chủ mới)."
+    "nameNote": "Tên gốc trong Operation Manual: Sunrise Pioneer (tài liệu chưa cập nhật tên/chủ mới).",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "QMS SUBHIYA",
@@ -725,7 +732,8 @@
     "srcDate": "2026-07-08",
     "id": "qms-subhiya",
     "displayName": "QMS SUBHIYA",
-    "nameNote": ""
+    "nameNote": "",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "VENUS 1 (tên đăng kiểm/registry gốc trong tài liệu: ZHAOSHANGHAISHI1)",
@@ -816,7 +824,8 @@
     "srcDate": "2026-07-08",
     "id": "venus-1",
     "displayName": "VENUS 1",
-    "nameNote": "Tên đăng kiểm gốc: Zhaoshanghaishi 1."
+    "nameNote": "Tên đăng kiểm gốc: Zhaoshanghaishi 1.",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "idName": "VENUS 2 (tên đăng ký/IMO gốc: ZHAOSHANGHAISHI2)",
@@ -907,6 +916,7 @@
     "srcDate": "2026-07-08",
     "id": "venus-2",
     "displayName": "VENUS 2",
-    "nameNote": "Tên đăng kiểm gốc: Zhaoshanghaishi 2."
+    "nameNote": "Tên đăng kiểm gốc: Zhaoshanghaishi 2.",
+    "speedKn": "8 knots (tự hành)"
   }
 ]

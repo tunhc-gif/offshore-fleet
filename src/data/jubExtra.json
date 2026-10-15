@@ -88,7 +88,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "QMS Gloria 212 POB Barge Specifications 17.07.2022; DU1738_2001 GA PLAN REV D",
-    "srcDate": "Rev.02, 14.11.2021 (spec); GA Rev D, 08.11.2021"
+    "srcDate": "Rev.02, 14.11.2021 (spec); GA Rev D, 08.11.2021",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "qms-omar",
@@ -179,7 +180,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "QMS Omar 191 POB Barge Specifications, Rev 02, 13.07.2021; OMR Crane Load Chart-100T",
-    "srcDate": "Rev 02, 13.07.2021"
+    "srcDate": "Rev 02, 13.07.2021",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "qms-pearl",
@@ -270,7 +272,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "QMS Pearl 300POB Barge Specifications, Rev. 01, 01.01.2021; QPL Crane Load Chart-190T",
-    "srcDate": "Rev. 01, 01.01.2021"
+    "srcDate": "Rev. 01, 01.01.2021",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "qms-surprise-xi",
@@ -361,7 +364,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "QMS Surprise XI - 300 POB Barge Specification Rev0, 28.02.2022",
-    "srcDate": "Rev.0, 28.02.2022"
+    "srcDate": "Rev.0, 28.02.2022",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "seafox-8",
@@ -452,7 +456,8 @@
     "opsAirTemp": "0°C ~ 55°C",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "Seafox_8-Jan2021; Main 220T & Aux 70T Crane Load Charts; On-Hire Report 2702-2021; GA drawings",
-    "srcDate": "01/2021 (spec); On-hire 31-10-2021"
+    "srcDate": "01/2021 (spec); On-hire 31-10-2021",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "gms-endurance",
@@ -543,7 +548,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "GMS_Barge Leaflet_E_Class_Endurance.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "gms-sharqi",
@@ -634,7 +640,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "GMS_Barge Leaflet_S_Class_Sharqi.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "jin-hua-01",
@@ -725,7 +732,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
-    "srcDate": "01/12/2025"
+    "srcDate": "01/12/2025",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "sj",
@@ -817,7 +825,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
     "srcDate": "01/12/2025",
-    "cargoDeckArea": "1065 m² (5 T/m²)"
+    "cargoDeckArea": "1065 m² (5 T/m²)",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "kamikaze",
@@ -909,7 +918,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
     "srcDate": "01/12/2025",
-    "cargoDeckArea": "650 m²"
+    "cargoDeckArea": "650 m²",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "blue-tern",
@@ -1001,7 +1011,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
     "srcDate": "01/12/2025",
-    "cargoDeckArea": "3750 m² (10 T/m²)"
+    "cargoDeckArea": "3750 m² (10 T/m²)",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "aos-maintainer",
@@ -1186,7 +1197,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "SEP-750.pdf (Factsheet V1.0, 01/2024)",
     "srcDate": "2024-01",
-    "cargoDeckArea": "800 m² (tải boong 10 T/m²)"
+    "cargoDeckArea": "800 m² (tải boong 10 T/m²)",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "seafox-burj",
@@ -1279,7 +1291,7 @@
     "srcDoc": "Seafox Burj- Specification Sheet.pdf",
     "srcDate": "Rev. 00, 01.03.2021",
     "cargoDeckArea": "1505 m² (deck space); deck capacity 2.4 t/m²",
-    "speedKn": "Không áp dụng",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "Không tìm thấy"
   },
@@ -1374,7 +1386,7 @@
     "srcDoc": "Seafox Deema- Specification Sheet.pdf",
     "srcDate": "Rev. 00, 01.03.2021",
     "cargoDeckArea": "538 m2 (deck capacity 2.5 t/m2)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "Không tìm thấy"
   },
@@ -1469,7 +1481,7 @@
     "srcDoc": "Seafox Frontier - Specification Sheet.pdf",
     "srcDate": "Rev. 00, 01.03.2021",
     "cargoDeckArea": "1480 m² (deck capacity 2.2 t/m²)",
-    "speedKn": "Không áp dụng",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "Không tìm thấy"
   },
@@ -2513,7 +2525,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "Hunter.pdf (Stanford Marine)",
     "srcDate": "Không tìm thấy",
-    "dwt": "1215.2 MT"
+    "dwt": "1215.2 MT",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "holmen-pacific",
@@ -2606,7 +2619,7 @@
     "srcDoc": "SLB_Holmen Pacific.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "5,300 m² (Clear Deck Area)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)",
     "bollardPullT": "250 T (Towing System Bollard Pull)",
     "dwt": "34,400 T / 41,500 T (Deadweight)"
   },
@@ -2616,7 +2629,7 @@
     "nameNote": "Tài liệu tiêu đề \"Lift boat_ Milaha\"; tên tàu thật trong tài liệu là MILAHA EXPLORER",
     "idName": "MILAHA EXPLORER",
     "idType": "Self Elevating Unit (Liftboat) / Accommodation Service",
-    "idOwner": "Không tìm thấy",
+    "idOwner": "Milaha",
     "idFlag": "Panama",
     "idPort": "Không tìm thấy",
     "idClassSociety": "American Bureau of Shipping",
@@ -2701,7 +2714,7 @@
     "srcDoc": "Lift boat_ Milaha.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "1,400 m2 (Main Deck Strength 5.0 - 7.5 mt/m2)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "1648.32 mt (Deadweight at design draft)"
   },
@@ -2794,98 +2807,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "GMS_Barge Leaflet_S_Class_Scirocco.pdf",
-    "srcDate": "Không tìm thấy"
-  },
-  {
-    "id": "hea-al-dhafeer",
-    "displayName": "HEA AL DHAFEER",
-    "nameNote": "Sà lan tự nâng tự hành, 150 POB, cẩu 100T. ZMI/HEA.",
-    "idName": "Không tìm thấy",
-    "idType": "Self-Propelled Jack-up Barge",
-    "idOwner": "Không tìm thấy",
-    "idFlag": "Không tìm thấy",
-    "idPort": "Không tìm thấy",
-    "idClassSociety": "Không tìm thấy",
-    "idNotation": "Không tìm thấy",
-    "idImo": "Không tìm thấy",
-    "idCallsign": "Không tìm thấy",
-    "idMmsi": "Không tìm thấy",
-    "idAbsNo": "Không tìm thấy",
-    "idRegNo": "Không tìm thấy",
-    "idDesigner": "Không tìm thấy",
-    "idBuilder": "Không tìm thấy",
-    "idHullNo": "Không tìm thấy",
-    "idYear": "Không tìm thấy",
-    "idLocation": "Không tìm thấy",
-    "dimLbp": "Không tìm thấy",
-    "dimLoa": "Không tìm thấy",
-    "dimWidth": "Không tìm thấy",
-    "dimDepth": "Không tìm thấy",
-    "dimLegsQty": "Không tìm thấy",
-    "dimLegType": "Không tìm thấy",
-    "dimLegLength": "Không tìm thấy",
-    "dimLegTransverseCenters": "Không tìm thấy",
-    "dimLegFwdAftDist": "Không tìm thấy",
-    "dimSpudcanHeight": "Không tìm thấy",
-    "dimSpudcanArea": "Không tìm thấy",
-    "wtLightshipExLegs": "Không tìm thấy",
-    "wtLegsSpudcans": "Không tìm thấy",
-    "wtLightshipTotal": "Không tìm thấy",
-    "wtDisplacementLoaded": "Không tìm thấy",
-    "wtDraftLoaded": "Không tìm thấy",
-    "accPobMax": "150",
-    "accDimsLwh": "Không tìm thấy",
-    "heliDiameter": "Không tìm thấy",
-    "heliType": "Không tìm thấy",
-    "heliMaxTow": "Không tìm thấy",
-    "craneMainQty": "Không tìm thấy",
-    "craneMainSwl": "100 t",
-    "craneMainWindLimit": "Không tìm thấy",
-    "craneAuxQty": "Không tìm thấy",
-    "craneAuxSwl": "Không tìm thấy",
-    "craneAuxWindLimit": "Không tìm thấy",
-    "jackUnitsPerLeg": "Không tìm thấy",
-    "jackUnitsTotal": "Không tìm thấy",
-    "jackNormalCapUnit": "Không tìm thấy",
-    "jackPreloadCapUnit": "Không tìm thấy",
-    "jackMaxHoldingUnit": "Không tìm thấy",
-    "jackStormHoldingUnit": "Không tìm thấy",
-    "jackSpeed": "Không tìm thấy",
-    "jackAlarmAngle": "Không tìm thấy",
-    "pwrMainGenDesc": "Không tìm thấy",
-    "pwrMainGenUnitEkw": "Không tìm thấy",
-    "pwrMainGenTotalEkw": "Không tìm thấy",
-    "pwrEmergGenDesc": "Không tìm thấy",
-    "pwrEmergGenEkw": "Không tìm thấy",
-    "pwrBowThruster": "Không tìm thấy",
-    "pwrAftThruster": "Không tìm thấy",
-    "pwrDpClass": "Không tìm thấy",
-    "tankFoTotalM3": "Không tìm thấy",
-    "tankFwTotalM3": "Không tìm thấy",
-    "tankBallastTotalM3": "Không tìm thấy",
-    "tankBrineTotalM3": "Không tìm thấy",
-    "tankBufferTotalM3": "Không tìm thấy",
-    "envStormWind": "Không tìm thấy",
-    "envStormWave": "Không tìm thấy",
-    "envStormPeriod": "Không tìm thấy",
-    "envStormDepth": "Không tìm thấy",
-    "envStormCurrent": "Không tìm thấy",
-    "envStormAirgap": "Không tìm thấy",
-    "envNormalWind": "Không tìm thấy",
-    "envNormalWave": "Không tìm thấy",
-    "envNormalPeriod": "Không tìm thấy",
-    "envNormalDepth": "Không tìm thấy",
-    "envNormalAirgap": "Không tìm thấy",
-    "opsFieldmoveWindKn": "Không tìm thấy",
-    "opsFieldmoveWaveM": "Không tìm thấy",
-    "opsFieldmoveBeaufort": "Không tìm thấy",
-    "opsJackingWind": "Không tìm thấy",
-    "opsJackingWave": "Không tìm thấy",
-    "opsCraneWind": "Không tìm thấy",
-    "opsAirTemp": "Không tìm thấy",
-    "opsSeaTemp": "Không tìm thấy",
-    "srcDoc": "HEA Dhafeer (ZMI)",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "liftboat-sj",
@@ -2976,7 +2899,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "Liftboat SJ Profile Rev.2.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "milaha-burooq",
@@ -3067,97 +2991,7 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "MILAHA BUROOQ -Signed.pdf",
-    "srcDate": "Không tìm thấy"
-  },
-  {
-    "id": "milaha-explorer",
-    "displayName": "MILAHA EXPLORER",
-    "nameNote": "Liftboat/self-elevating unit, lưu trú, DPS-1, ABS. Chủ: Milaha.",
-    "idName": "Không tìm thấy",
-    "idType": "Self-Elevating Unit / Liftboat / DPS-1",
-    "idOwner": "Milaha",
-    "idFlag": "Không tìm thấy",
-    "idPort": "Không tìm thấy",
-    "idClassSociety": "ABS",
-    "idNotation": "Không tìm thấy",
-    "idImo": "Không tìm thấy",
-    "idCallsign": "Không tìm thấy",
-    "idMmsi": "Không tìm thấy",
-    "idAbsNo": "Không tìm thấy",
-    "idRegNo": "Không tìm thấy",
-    "idDesigner": "Không tìm thấy",
-    "idBuilder": "Không tìm thấy",
-    "idHullNo": "Không tìm thấy",
-    "idYear": "Không tìm thấy",
-    "idLocation": "Không tìm thấy",
-    "dimLbp": "Không tìm thấy",
-    "dimLoa": "Không tìm thấy",
-    "dimWidth": "Không tìm thấy",
-    "dimDepth": "Không tìm thấy",
-    "dimLegsQty": "Không tìm thấy",
-    "dimLegType": "Không tìm thấy",
-    "dimLegLength": "Không tìm thấy",
-    "dimLegTransverseCenters": "Không tìm thấy",
-    "dimLegFwdAftDist": "Không tìm thấy",
-    "dimSpudcanHeight": "Không tìm thấy",
-    "dimSpudcanArea": "Không tìm thấy",
-    "wtLightshipExLegs": "Không tìm thấy",
-    "wtLegsSpudcans": "Không tìm thấy",
-    "wtLightshipTotal": "Không tìm thấy",
-    "wtDisplacementLoaded": "Không tìm thấy",
-    "wtDraftLoaded": "Không tìm thấy",
-    "accPobMax": "Không tìm thấy",
-    "accDimsLwh": "Không tìm thấy",
-    "heliDiameter": "Không tìm thấy",
-    "heliType": "Không tìm thấy",
-    "heliMaxTow": "Không tìm thấy",
-    "craneMainQty": "Không tìm thấy",
-    "craneMainSwl": "Không tìm thấy",
-    "craneMainWindLimit": "Không tìm thấy",
-    "craneAuxQty": "Không tìm thấy",
-    "craneAuxSwl": "Không tìm thấy",
-    "craneAuxWindLimit": "Không tìm thấy",
-    "jackUnitsPerLeg": "Không tìm thấy",
-    "jackUnitsTotal": "Không tìm thấy",
-    "jackNormalCapUnit": "Không tìm thấy",
-    "jackPreloadCapUnit": "Không tìm thấy",
-    "jackMaxHoldingUnit": "Không tìm thấy",
-    "jackStormHoldingUnit": "Không tìm thấy",
-    "jackSpeed": "Không tìm thấy",
-    "jackAlarmAngle": "Không tìm thấy",
-    "pwrMainGenDesc": "Không tìm thấy",
-    "pwrMainGenUnitEkw": "Không tìm thấy",
-    "pwrMainGenTotalEkw": "Không tìm thấy",
-    "pwrEmergGenDesc": "Không tìm thấy",
-    "pwrEmergGenEkw": "Không tìm thấy",
-    "pwrBowThruster": "Không tìm thấy",
-    "pwrAftThruster": "Không tìm thấy",
-    "pwrDpClass": "DP1",
-    "tankFoTotalM3": "Không tìm thấy",
-    "tankFwTotalM3": "Không tìm thấy",
-    "tankBallastTotalM3": "Không tìm thấy",
-    "tankBrineTotalM3": "Không tìm thấy",
-    "tankBufferTotalM3": "Không tìm thấy",
-    "envStormWind": "Không tìm thấy",
-    "envStormWave": "Không tìm thấy",
-    "envStormPeriod": "Không tìm thấy",
-    "envStormDepth": "Không tìm thấy",
-    "envStormCurrent": "Không tìm thấy",
-    "envStormAirgap": "Không tìm thấy",
-    "envNormalWind": "Không tìm thấy",
-    "envNormalWave": "Không tìm thấy",
-    "envNormalPeriod": "Không tìm thấy",
-    "envNormalDepth": "Không tìm thấy",
-    "envNormalAirgap": "Không tìm thấy",
-    "opsFieldmoveWindKn": "Không tìm thấy",
-    "opsFieldmoveWaveM": "Không tìm thấy",
-    "opsFieldmoveBeaufort": "Không tìm thấy",
-    "opsJackingWind": "Không tìm thấy",
-    "opsJackingWave": "Không tìm thấy",
-    "opsCraneWind": "Không tìm thấy",
-    "opsAirTemp": "Không tìm thấy",
-    "opsSeaTemp": "Không tìm thấy",
-    "srcDoc": "Lift boat_ Milaha.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)"
   }
 ]

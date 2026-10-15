@@ -278,7 +278,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
-    "srcDate": "01/12/2025"
+    "srcDate": "01/12/2025",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "ena-haven",
@@ -1036,7 +1037,7 @@
     "srcDoc": "1.PERDANA SOVEREIGN - WKBT.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "530 m² (Main Deck); 100 m² (A-level Deck); Deck Tonnage 300 tons; strength 5 tons/m²",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "2,342.63 tons"
   },
@@ -1319,7 +1320,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "[I] QUA-MN04 Sổ tay vận hành Sà lan nhà ở PTSC GUARDIAN - Rev. 04 (POS-QUA-MN04)",
-    "srcDate": "23/04/2025 (Rev. 04)"
+    "srcDate": "23/04/2025 (Rev. 04)",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "perdana-emerald",
@@ -1412,7 +1414,7 @@
     "srcDoc": "PERDANA - TECHNICAL PROPOSAL.pdf",
     "srcDate": "11/02/2015",
     "cargoDeckArea": "1,600 m² (clear deck area; main deck strength 12.5 T/m²)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "10491.00 tons"
   },
@@ -1507,7 +1509,7 @@
     "srcDoc": "Spec for PR.pdf; GA for PR.pdf (Wärtsilä Ship Design dwg 40437, ABS SOC Ref T1144717); 2.2 AWB PERDANA RESOLUTE_CRANE LOAD CHART.pdf (Huisman PMC 6200-300)",
     "srcDate": "2015-01-28",
     "cargoDeckArea": "1600 m2 clear deck area (Main deck strength 12.5 T/m2)",
-    "speedKn": "Không áp dụng",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "10491.00 tons"
   },
@@ -1602,7 +1604,7 @@
     "srcDoc": "VP PSB Support 200.pdf (Vessel Particulars, PT Pelayaran Salam Bahagia / General Arrangement Dwg CJ 101 G001)",
     "srcDate": "2024-07-30",
     "cargoDeckArea": "818 sq m (without crane space), deck strength 15 T/sq m",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "3350.13 T"
   },
@@ -1697,7 +1699,7 @@
     "srcDoc": "AWB Rajawali Pacific - Bayu Maritim.pdf",
     "srcDate": "17 Apr 2024",
     "cargoDeckArea": "~ 1,250 m2 (Deck Strength 15 T/m2)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "6,470 MT"
   },
@@ -1792,7 +1794,7 @@
     "srcDoc": "TWO AARYAN - BRIEF SPECS & GA PLAN.pdf (Vessel Specifications, Two Offshore Marine Sdn. Bhd.)",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "1,850 m2 (deck strength 15 T/m2)",
-    "speedKn": "Không áp dụng",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "8,034 T"
   },
@@ -1887,7 +1889,7 @@
     "srcDoc": "2.1. SP_AWB Amaris.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "Approx. 1600 m²",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "Không tìm thấy"
   },
@@ -1982,7 +1984,7 @@
     "srcDoc": "Ship Particullar_AWB. EP 300.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "1,330 m2 (Clear deck space; Deck Strength 15 ton/m2)",
-    "speedKn": "Không áp dụng",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "10,570.3 MT"
   },
@@ -2077,7 +2079,7 @@
     "srcDoc": "1.1. SP_AWB Petroleum Excelsior.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "Approx. 1,500 m² (Main Deck Strength 12.5 tons/m²)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "10,414.93 tons"
   },
@@ -2172,7 +2174,7 @@
     "srcDoc": "AWB Rajawali Miracle - Bayu Maritim.pdf",
     "srcDate": "Updated 18 September 2024",
     "cargoDeckArea": "1,625 m2 clear deck (540 m2 covered); deck strength 15 T/m2",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "11,355.69 MT"
   },
@@ -2267,7 +2269,7 @@
     "srcDoc": "Brochure SEB - SAPURA 300.pdf; Vessel Status Report-SAPURA 300.pdf",
     "srcDate": "Vessel Status Report 11 May 2026; Delivered 17-Apr-2009",
     "cargoDeckArea": "approx. 1926 m2 (clear deck area); deck strength 12.5 T/sq.m",
-    "speedKn": "Không áp dụng",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "9439.95 tonnes (brochure approx. 9954 T)"
   },
@@ -2362,7 +2364,7 @@
     "srcDoc": "AESEN 3305 (exEOS 3305).Vsl Specs.r06.2025.pdf",
     "srcDate": "r06.2025",
     "cargoDeckArea": "sức chịu boong 15 t/m²",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "13,481 T"
   },
@@ -2457,7 +2459,7 @@
     "srcDoc": "EOS 282.Vsl Specs.r05.2025.pdf",
     "srcDate": "r05.2025",
     "cargoDeckArea": "sức chịu boong 20 t/m²",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "7,886 T"
   },
@@ -2552,7 +2554,7 @@
     "srcDoc": "7. MUTIARA 280 Specification.pdf",
     "srcDate": "Updated on 15th March 2023",
     "cargoDeckArea": "sức chịu boong 20 t/m²",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "Approx. 7,702 Tons"
   },
@@ -2647,7 +2649,7 @@
     "srcDoc": "PENX1- Brochure.pdf",
     "srcDate": "Revised: 03/11/2015",
     "cargoDeckArea": "1,600 m² (Clear Deck Area); Main Deck Strength 12.5 T/m²",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "10491.00 tons"
   },
@@ -2742,7 +2744,7 @@
     "srcDoc": "WDM - SPEC rev.220705.pdf",
     "srcDate": "5 July 2022 (rev. 220705)",
     "cargoDeckArea": "2220 M2 (Approx.)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "11,784 T"
   },
@@ -2837,7 +2839,7 @@
     "srcDoc": "Saujana Lapan.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "Deck space main deck 530 M², A-level deck 100 M² (deck tonnage 300 tons, main deck strength 5 tons/M²)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "2,342.63T"
   },
@@ -2932,7 +2934,7 @@
     "srcDoc": "330'X120'X20' Specification - Specs of 330 Class Barge.pdf",
     "srcDate": "Mar. 18, 2025 (Rev. 4), Drawing No. G-100-01SPEC",
     "cargoDeckArea": "Deck Loading 25.0 T/m² (deck scantlings designed to suit 25 T/m² loading)",
-    "speedKn": "Không áp dụng",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "approx. 13,000 T"
   },
@@ -3027,7 +3029,7 @@
     "srcDoc": "JMC 2825 - Specification Sheet.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "sức chịu boong 25 t/m²",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "6,728 MT"
   },
@@ -3122,7 +3124,7 @@
     "srcDoc": "MISS HANNAH - Specification Sheet.pdf",
     "srcDate": "Không tìm thấy",
     "cargoDeckArea": "sức chịu boong 25 t/m²",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không tìm thấy",
     "dwt": "20,126 tonne (approximately)"
   },
@@ -3217,7 +3219,7 @@
     "srcDoc": "Specification of CSBC NO.15.pdf",
     "srcDate": "September 27, 2024 Rev. 11",
     "cargoDeckArea": "5330 m^2 (130 x 41 m)",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "23,000 MT at draft 5.5m (design); 32,000 MT at draft 7.10m (max)"
   },
@@ -3312,7 +3314,7 @@
     "srcDoc": "Visal 3000T Specs.pdf",
     "srcDate": "25-08-2016",
     "cargoDeckArea": "Không tìm thấy",
-    "speedKn": "Không tìm thấy",
+    "speedKn": "3 knots (towed)",
     "bollardPullT": "Không áp dụng",
     "dwt": "3000 DWT (Deadweight 3874 T; Gross Tonnage 1544 GRT)"
   },
@@ -3405,7 +3407,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "NSC spec (Keyfield)",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "m-guardian",
@@ -3496,7 +3499,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "M Guardian spec (Aesen)",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "jc-2823",
@@ -3587,7 +3591,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "282 feet barge - Specification & GA.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "pacific-radiance-280ft-barge",
@@ -3678,7 +3683,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "280FT Barge.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "prestige-284",
@@ -3769,7 +3775,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "BTB_Prestige 284.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "prestige-3304",
@@ -3860,7 +3867,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "BTB_Presitge 3304.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "zhixian-no-1",
@@ -3951,7 +3959,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "130M.PARTICULARS-1.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "rajawali-cavalier",
@@ -4042,7 +4051,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "AWB Rajawali Cavalier - Bayu Maritim.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "halul-tbn-newbuild",
@@ -4133,7 +4143,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "Halul TBN (Newbuild) - supporting documents",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "8 knots (tự hành)"
   },
   {
     "id": "crest-2821",
@@ -4224,7 +4235,8 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "Crest2821-282FTBarge-Updated Feb17-Rev05.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   },
   {
     "id": "crest-301",
@@ -4315,6 +4327,7 @@
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "Crest301-300FTBarge-Updated Oct13-Rev03.pdf",
-    "srcDate": "Không tìm thấy"
+    "srcDate": "Không tìm thấy",
+    "speedKn": "3 knots (towed)"
   }
 ]
