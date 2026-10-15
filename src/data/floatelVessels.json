@@ -2939,7 +2939,7 @@
   {
     "id": "jmc-2825",
     "displayName": "JMC 2825",
-    "nameNote": "Flat Top Deck Cargo Barge",
+    "nameNote": "Flat Top Deck Cargo Barge. Deck cargo & ballast barge. GRT 3.405/NT 1.021; Smit bracket 80T SWL; 8 double bitt 10\" mỗi mạn. Chủ: 4Barges.",
     "idName": "JMC 2825",
     "idType": "Deck Cargo and Ballast Tank Barge",
     "idOwner": "Không tìm thấy",
@@ -3026,7 +3026,7 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "JMC 2825 - Specification Sheet.pdf",
     "srcDate": "Không tìm thấy",
-    "cargoDeckArea": "Không tìm thấy",
+    "cargoDeckArea": "sức chịu boong 25 t/m²",
     "speedKn": "Không tìm thấy",
     "bollardPullT": "Không tìm thấy",
     "dwt": "6,728 MT"
@@ -3034,7 +3034,7 @@
   {
     "id": "miss-hannah",
     "displayName": "MISS HANNAH",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Deck cargo & ballast barge 400x120x25 ft. GRT 9.128/NT 2.738; mooring 10 x twin bitt 12\".",
     "idName": "MISS HANNAH",
     "idType": "Deck Cargo and Ballast Tank Barge (Flat Top Deck Cargo Barge)",
     "idOwner": "Không tìm thấy",
@@ -3121,7 +3121,7 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "MISS HANNAH - Specification Sheet.pdf",
     "srcDate": "Không tìm thấy",
-    "cargoDeckArea": "Không tìm thấy",
+    "cargoDeckArea": "sức chịu boong 25 t/m²",
     "speedKn": "Không tìm thấy",
     "bollardPullT": "Không tìm thấy",
     "dwt": "20,126 tonne (approximately)"

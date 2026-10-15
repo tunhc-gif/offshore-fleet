@@ -844,7 +844,7 @@
   {
     "id": "tc-dragon",
     "displayName": "TC DRAGON",
-    "nameNote": "Lực đẩy: Self propelled — Đối chiếu tên/spec 66.6m x 16m, đóng 2006 và AIS hiện hành. — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có.",
+    "nameNote": "Lực đẩy: Self propelled — Đối chiếu tên/spec 66.6m x 16m, đóng 2006 và AIS hiện hành. — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có. AHTS 7.000 HP, DP2, FiFi Class 1. Chủ: Tan Cang Offshore.",
     "idName": "TC Dragon",
     "idType": "Tàu tiếp vận (Supply Boat)",
     "idOwner": "TAN CANG",
@@ -931,7 +931,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
     "srcDate": "01/12/2025",
-    "cargoDeckArea": "450 m² (10 T/m²)"
+    "cargoDeckArea": "450 m² (10 T/m²)",
+    "bollardPullT": "90 t"
   },
   {
     "id": "ptsc-chi-linh",
@@ -1124,13 +1125,13 @@
   {
     "id": "binh-an-victoria",
     "displayName": "BINH AN VICTORIA",
-    "nameNote": "Lực đẩy: Self propelled — Đối chiếu tên/spec Binh An Victoria và AIS hiện hành. — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có.",
+    "nameNote": "Lực đẩy: Self propelled — Đối chiếu tên/spec Binh An Victoria và AIS hiện hành. — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có. AHTS & Supply Vessel, FiFi, 4.200 BHP. Deck cargo 380 MT.",
     "idName": "Binh An Victoria",
     "idType": "Tàu tiếp vận (Supply Boat)",
     "idOwner": "Không tìm thấy",
     "idFlag": "Vietnam",
     "idPort": "Không tìm thấy",
-    "idClassSociety": "Không tìm thấy",
+    "idClassSociety": "NK + VR, NS (TUG/OSV), MNS",
     "idNotation": "Không tìm thấy",
     "idImo": "9635731",
     "idCallsign": "Không tìm thấy",
@@ -1211,7 +1212,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
     "srcDate": "01/12/2025",
-    "cargoDeckArea": "250 m² (5 T/m²)"
+    "cargoDeckArea": "250 m² (5 T/m²)",
+    "bollardPullT": "42 t"
   },
   {
     "id": "ossoy",
@@ -1308,7 +1310,7 @@
   {
     "id": "lewek-plover",
     "displayName": "LEWEK PLOVER",
-    "nameNote": "Lực đẩy: Self Propelled — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có.",
+    "nameNote": "Lực đẩy: Self Propelled — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có. AHTS worldwide: rig towing & logistics; FiFi1, seismic/standby. AH/tow winch 300T pull / 450T brake. Chủ: EMAS Offshore.",
     "idName": "Lewek Plover",
     "idType": "Tàu tiếp vận (Supply Boat)",
     "idOwner": "Không tìm thấy",
@@ -1395,7 +1397,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
     "srcDate": "01/12/2025",
-    "cargoDeckArea": "500 m² (5.5 T/m²)"
+    "cargoDeckArea": "500 m² (5.5 T/m²)",
+    "bollardPullT": "160,2 t"
   },
   {
     "id": "lewek-stork",

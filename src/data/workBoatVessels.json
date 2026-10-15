@@ -1424,7 +1424,7 @@
   {
     "id": "hvs-51",
     "displayName": "HVS 51",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Tug / FiFi boat (STAR 3). GT 460; FiFi nước 480 m³/h @150m, foam 7,5 m³/h. 2 radar/ARPA, GPS, gyro.",
     "idName": "HVS 51.H9",
     "idType": "Tugboat FireFighting",
     "idOwner": "HAIVANSHIP",
@@ -1994,7 +1994,7 @@
   {
     "id": "kasuga",
     "displayName": "KASUGA",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Tàu kéo/dịch vụ (tug). GT 317; FiFi nước 360 m³/h @120m, foam 20 m³.",
     "idName": "KASUGA",
     "idType": "Tugboat & Service",
     "idOwner": "HAIVANSHIP",
@@ -2184,7 +2184,7 @@
   {
     "id": "phu-my-12",
     "displayName": "PHU MY 12",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Tàu kéo (tug). Towing winch 45 t. Chủ: HAIVANSHIP.",
     "idName": "PHU MY 12",
     "idType": "Tugboat & Service",
     "idOwner": "HAIVANSHIP",
@@ -2849,7 +2849,7 @@
   {
     "id": "minh-hoang-06",
     "displayName": "MINH HOANG 06",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Tàu kéo ven biển 2 x 880 HP FPP. Towing hook single (BP 22T); anchor windlass 3,2T; thuyền viên an toàn 9.",
     "idName": "MINH HOANG 06",
     "idType": "Coastal Going Tugboat",
     "idOwner": "TRUNG KIEN LOGISTICS TRANSPORTATION CO.LTD",
@@ -3229,7 +3229,7 @@
   {
     "id": "vnl-ruby",
     "displayName": "VNL RUBY",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Azimuth tug 5.000 BHP. Tow winch Plimsoll brake 150T, line pull 20/10T; GT 327 / NT 98.",
     "idName": "VNL RUBY",
     "idType": "Azimuth 5,000 BHP (Azimuth Stern Drive tug)",
     "idOwner": "Vina Logistics Corporation",

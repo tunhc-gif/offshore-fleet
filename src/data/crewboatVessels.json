@@ -368,7 +368,7 @@
   {
     "id": "aesen-66",
     "displayName": "AESEN 66",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Fast utility craft / crewboat 36m; FiFi ¼ (bơm 600 m³/h); 70 ghế khách. Chủ: Aesen Group.",
     "idName": "Aesen 66",
     "idType": "Fast Utility Craft / Crewboat",
     "idOwner": "Không tìm thấy",
@@ -463,7 +463,7 @@
   {
     "id": "sk-able",
     "displayName": "SK ABLE",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Fast Crew Boat 42m, 5.400 BHP, 80 men, 28 knots.",
     "idName": "SK ABLE",
     "idType": "42M Fast Crew Boat",
     "idOwner": "Không tìm thấy",
@@ -653,7 +653,7 @@
   {
     "id": "tms-chana",
     "displayName": "TMS CHANA",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Fast Crew Boat 42m Gen 4. Chủ: TMS (Thailand).",
     "idName": "TMS CHANA",
     "idType": "42m GEN 4, Fast Crew Boat",
     "idOwner": "Không tìm thấy",
@@ -1318,7 +1318,7 @@
   {
     "id": "sar413",
     "displayName": "SAR413",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Tàu SAR/khách cao tốc. Yard No 549859.",
     "idName": "M/V SAR 413",
     "idType": "Search & Rescue and passenger Vessel (Modern High Speed Semi-displacement)",
     "idOwner": "Không tìm thấy",
@@ -1371,7 +1371,7 @@
     "jackStormHoldingUnit": "Không áp dụng",
     "jackSpeed": "Không áp dụng",
     "jackAlarmAngle": "Không áp dụng",
-    "pwrMainGenDesc": "Không tìm thấy",
+    "pwrMainGenDesc": "Máy chính 2 x MTU (tổng 6.310 HP @2000rpm); 2 chân vịt đồng fixed pitch",
     "pwrMainGenUnitEkw": "Không tìm thấy",
     "pwrMainGenTotalEkw": "Không tìm thấy",
     "pwrEmergGenDesc": "Không tìm thấy",
