@@ -569,13 +569,13 @@
   {
     "id": "telford-25",
     "displayName": "TELFORD 25",
-    "nameNote": "Lực đẩy: Self propeller — Khớp spec Telford 25/Jascon 25, LOA 118.8m. — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có.",
+    "nameNote": "Lực đẩy: Self propeller — Khớp spec Telford 25/Jascon 25, LOA 118.8m. — Dữ liệu tóm tắt từ bảng tổng hợp XLHH (01/12/2025); một số thông số chi tiết chưa có. GT 14,829 t; call sign ZDIS3; optional modular rigid/flexible S-lay (2 x 60 t tensioners, 120 t A&R); helideck S-92A; moored via 2 anchor windlasses.",
     "idName": "Telford 25",
     "idType": "Tàu công trình ngoài khơi (Offshore Construction Vessel)",
     "idOwner": "TELFORD OFFSHORE",
     "idFlag": "Gibraltar",
     "idPort": "Không tìm thấy",
-    "idClassSociety": "Không tìm thấy",
+    "idClassSociety": "ABS +A1 Barge, +PAS, +DPS-3, CRC",
     "idNotation": "Không tìm thấy",
     "idImo": "8770106",
     "idCallsign": "Không tìm thấy",
@@ -622,7 +622,7 @@
     "jackStormHoldingUnit": "Không áp dụng",
     "jackSpeed": "Không áp dụng",
     "jackAlarmAngle": "Không áp dụng",
-    "pwrMainGenDesc": "Không tìm thấy",
+    "pwrMainGenDesc": "4 x Caterpillar CAT 3516B (1,825 kW each)",
     "pwrMainGenUnitEkw": "Không tìm thấy",
     "pwrMainGenTotalEkw": "Không tìm thấy",
     "pwrEmergGenDesc": "Không tìm thấy",
@@ -630,7 +630,7 @@
     "pwrBowThruster": "Không tìm thấy",
     "pwrAftThruster": "Không tìm thấy",
     "pwrDpClass": "DP3",
-    "tankFoTotalM3": "Không tìm thấy",
+    "tankFoTotalM3": "1,890.6 m3 (storage)",
     "tankFwTotalM3": "Không tìm thấy",
     "tankBallastTotalM3": "Không tìm thấy",
     "tankBrineTotalM3": "Không tìm thấy",
@@ -656,7 +656,8 @@
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "XLHH_Vessel Specifications_1 Dec 2025 - IMO update draft.xlsx",
     "srcDate": "01/12/2025",
-    "cargoDeckArea": "1500 m² (10 T/m²)"
+    "cargoDeckArea": "1500 m² (10 T/m²)",
+    "dwt": "7,936 t"
   },
   {
     "id": "keyfield-commander",
@@ -1691,7 +1692,7 @@
   {
     "id": "telford-31",
     "displayName": "TELFORD 31",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "GT 12,536 t; call sign ZDKB6; moonpool 7.90 x 6.06 m; 400 t AHC crane used for deepwater subsea installs (>1000 m); helideck S-92A; worked BP Angola PSVM, Total Dalia/CLOV/Pazflor, ExxonMobil Erha.",
     "idName": "Telford 31",
     "idType": "Accommodation & Offshore Construction Vessel (Barge)",
     "idOwner": "Telford Offshore International Ltd.",
@@ -1881,7 +1882,7 @@
   {
     "id": "telford-28",
     "displayName": "TELFORD 28",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "GT 13,062 t; call sign ZDHX5; upgraded Jun 2008; 462 berths in 120 cabins; helideck S-92A.",
     "idName": "Telford 28",
     "idType": "Multipurpose DP3 vessel - Accommodation & Hook Up / Offshore Construction",
     "idOwner": "Telford Offshore International Ltd.",
@@ -1976,7 +1977,7 @@
   {
     "id": "telford-34",
     "displayName": "TELFORD 34",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Ex-JASCON 34 (same IMO 8770273, call sign ZDJL7); GT 14,725 t; modular rigid/flexible S-lay (2 x 60 t tensioners, 55 m stinger, 7 workstations, 120 t A&R); moonpool 7.90 x 7.20 m; helideck S-92A.",
     "idName": "Telford 34",
     "idType": "Multipurpose DP3 vessel (Accommodation & Hook Up / Offshore Construction / DP Pipelay)",
     "idOwner": "Telford Offshore International Ltd.",

@@ -14807,10 +14807,10 @@
   {
     "id": "tc-mermaid",
     "displayName": "TC MERMAID",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "ROV support capable (heavy work-class ROVs); RR Brattvaag towing winch 152 t; shark jaw / tow pins SWL 350 t; GRT/NRT 1,854/557; Panama flag.",
     "idName": "TC MERMAID",
     "idType": "OSV Vessel : 6,500 HP, DP1, Bollard Pull 74 MT",
-    "idOwner": "Không tìm thấy",
+    "idOwner": "Mermaid Offshore Services Ltd",
     "idFlag": "Panama",
     "idPort": "Không tìm thấy",
     "idClassSociety": "DNV",
