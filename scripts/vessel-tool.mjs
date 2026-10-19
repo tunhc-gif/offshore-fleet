@@ -40,6 +40,7 @@ const NA = "Không áp dụng";
 // Nhóm category slug -> file dữ liệu (không .json). Khớp vessels.ts + vesselTypes.ts.
 const CATEGORY_FILE = {
   hlv: "hlvVessels",
+  htv: "htvVessels",
   jub: "jubExtra", // tàu mới luôn vào jubExtra (jubVessels là bộ gốc)
   ocv: "ocvVessels",
   dsv: "dsvVessels",
@@ -54,6 +55,7 @@ const CATEGORY_FILE = {
 // Mọi file chứa tàu (để dedup + rebuild CSV), kèm category tag.
 const ALL_FILES = [
   ["hlvVessels", "hlv"],
+  ["htvVessels", "htv"],
   ["jubVessels", "jub"],
   ["jubExtra", "jub"],
   ["ocvVessels", "ocv"],
@@ -121,6 +123,8 @@ function detectCategory(idType) {
   if (/accommodation|accomodation|flotel|floatel/.test(t)) return "floatel";
   // 3. DLB
   if (/derrick|pipe ?lay|lay ?barge|\bdlb\b|reel ?lay|stinger|firing line/.test(t)) return "dlb";
+  // 3b. HTV (vận tải siêu nặng, bán chìm float-on/float-off)
+  if (/heavy.?transport|\bhtv\b|float.?on.?float.?off|flo-?flo|semi.?submersible.*(transport|carrier)|module carrier/.test(t)) return "htv";
   // 4. HLV
   if (/heavy.?lift|crane vessel|crane barge|floating crane|revolving crane|sheer ?leg/.test(t)) return "hlv";
   // 5. Floatover

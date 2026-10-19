@@ -156,6 +156,7 @@ export function CrewboatIcon(props: IconProps) {
 
 export const vesselIconMap: Record<string, (props: IconProps) => JSX.Element> = {
   hlv: HlvIcon,
+  htv: FloatoverIcon,
   jub: JubIcon,
   ocv: OcvIcon,
   ahts: OcvIcon,

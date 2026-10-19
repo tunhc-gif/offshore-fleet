@@ -7,6 +7,7 @@ import workBoat from "./workBoatVessels.json";
 import crewboat from "./crewboatVessels.json";
 import floatel from "./floatelVessels.json";
 import hlv from "./hlvVessels.json";
+import htv from "./htvVessels.json";
 import dsv from "./dsvVessels.json";
 import ahts from "./ahtsVessels.json";
 import dlb from "./dlbVessels.json";
@@ -22,6 +23,7 @@ function tag(arr: unknown[], category: string): Vessel[] {
 // Category slug -> vessels. Slugs match src/data/vesselTypes.ts.
 export const vesselsByType: Record<string, Vessel[]> = {
   hlv: tag(hlv as unknown[], "hlv"),
+  htv: tag(htv as unknown[], "htv"),
   jub: tag([...(jubBase as unknown[]), ...(jubExtra as unknown[])], "jub"),
   ocv: tag(ocv as unknown[], "ocv"),
   dsv: tag(dsv as unknown[], "dsv"),

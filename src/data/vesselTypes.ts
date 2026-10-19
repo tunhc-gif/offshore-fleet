@@ -19,6 +19,15 @@ export const vesselTypes: VesselType[] = [
     hasData: false,
   },
   {
+    slug: "htv",
+    code: "HTV",
+    nameVi: "Tàu vận tải siêu trường siêu trọng (Heavy Transport Vessel)",
+    nameEn: "Heavy Transport Vessel",
+    descVi: "Tàu bán chìm/boong hở (float-on/float-off) chuyên vận chuyển kết cấu, giàn khoan, module và tàu cỡ lớn.",
+    descEn: "Semi-submersible / open-deck (float-on/float-off) vessel for transporting large structures, rigs, modules and vessels.",
+    hasData: true,
+  },
+  {
     slug: "jub",
     code: "JUB",
     nameVi: "Sà lan tự nâng (Jack-Up Barge / Liftboat)",
