@@ -332,13 +332,36 @@ export const offshoreFields: OffshoreField[] = [
     mapLat: 27.9,
     mapLng: 48.8,
   },
+  {
+    slug: "marjan",
+    countrySlug: "ksa",
+    region: "Marjan (Saudi Aramco)",
+    nameVi: "Marjan (Vịnh Ba Tư)",
+    nameEn: "Marjan (Arabian Gulf)",
+    lat: "28.4389° N",
+    lon: "49.6746° E",
+    waterDepth: "≈40–45 m",
+    nearestPort: "Jubail / Ras Tanura (KSA)",
+    dataSource:
+      "ERA5 reanalysis (ECMWF) tại điểm 28.4389° N, 49.6746° E — chuỗi giờ 2006-01 → 2026-10 (182.184 bản ghi). Gió: wind_speed_10m (m/s). Sóng: wave_height Hs (m). Phân bố % tần suất theo tháng tính trực tiếp từ chuỗi thời gian ERA5 (không nội suy, không bịa).",
+    statPeriod: "Thống kê theo tháng từ hindcast ERA5 2006–2026 (~20,8 năm)",
+    lastUpdated: "ERA5 tới 2026-10 · tích hợp 2026-10",
+    windMeta: "Gió tại độ cao 10 m (m/s) — ERA5 hourly",
+    waveMeta: "Chiều cao sóng ý nghĩa Hs (m) — ERA5 hourly",
+    dataKind: "Hindcast (ERA5 / ECMWF)",
+    sample: false,
+    defaultWindLimit: 12,
+    defaultHsLimit: 1.5,
+    mapLat: 28.4389,
+    mapLng: 49.6746,
+  },
 ];
 
 // Region ordering per country (for grouping on the country page).
 export const regionsByCountry: Record<string, string[]> = {
   vietnam: ["Vũng Tàu", "Nam Côn Sơn", "Cửu Long", "Malay – Thổ Chu", "Sông Hồng"],
   qatar: ["Maydan Mahzam", "Sensor Tower Platforms (Halul)", "Bul Hanine", "North Field"],
-  ksa: ["Arabian Gulf (Saudi Aramco)"],
+  ksa: ["Marjan (Saudi Aramco)", "Arabian Gulf (Saudi Aramco)"],
   nigeria: ["OML 112 (Niger Delta)"],
   thailand: ["Block B8/32 (Gulf of Thailand)"],
   myanmar: ["Biển Andaman"],
