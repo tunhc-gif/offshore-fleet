@@ -6,8 +6,10 @@ import { Info, Radar, ExternalLink, CloudRain, ChevronRight, Camera } from "luci
 import PageHeader from "@/components/PageHeader";
 import VesselPhotos from "@/components/VesselPhotos";
 import ClassSurvey from "@/components/ClassSurvey";
+import VesselHistory from "@/components/VesselHistory";
 import VoyageCalculator from "@/components/VoyageCalculator";
 import vesselPhotos from "@/data/vesselPhotos.json";
+import vesselEquasis from "@/data/vesselEquasis.json";
 import { useLanguage } from "@/context/LanguageContext";
 import { useVesselData } from "@/context/VesselDataContext";
 import { formatVal } from "@/data/jubVessels";
@@ -75,6 +77,15 @@ export default function VesselDetailPage({
     photoMap[String(vessel.idImo).trim()] ||
     [];
 
+  type EquasisRec = {
+    clsSociety?: string; clsStatus?: string; clsSince?: string;
+    surveyLast?: string; surveyNext?: string; pni?: string;
+    geo?: { date: string; area: string; source?: string }[];
+  };
+  const equasisMap = vesselEquasis as Record<string, EquasisRec>;
+  const equasis: EquasisRec | null =
+    (imo && equasisMap[imo]) || equasisMap[vessel.id] || null;
+
   return (
     <div>
       <PageHeader
@@ -130,7 +141,9 @@ export default function VesselDetailPage({
         <VoyageCalculator defaultSpeed={defaultSpeed} />
       </div>
 
-      <ClassSurvey imo={imo} society={vessel.idClassSociety} notation={vessel.idNotation} />
+      <ClassSurvey imo={imo} society={vessel.idClassSociety} notation={vessel.idNotation} equasis={equasis} />
+
+      {equasis?.geo && equasis.geo.length > 0 && <VesselHistory rows={equasis.geo} />}
 
       <Link
         href={`/weather-downtime?type=${params.type}&vessel=${vessel.id}`}

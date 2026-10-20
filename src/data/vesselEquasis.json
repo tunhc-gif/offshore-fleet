@@ -1,0 +1,27 @@
+{
+ "9186338": {
+  "clsSociety": "Bureau Veritas (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "28/01/2016",
+  "surveyLast": "15/03/2025",
+  "surveyNext": "29/04/2030",
+  "pni": "Standard P&I Club per Charles Taylor & Co (inception 23/12/2024)",
+  "geo": [
+   {"date": "October 2026", "area": "Middle America and Gulf of Mexico", "source": "MarineTraffic"},
+   {"date": "September 2026", "area": "Middle America and Gulf of Mexico", "source": "MarineTraffic"},
+   {"date": "August 2026", "area": "Middle America and Gulf of Mexico", "source": "MarineTraffic"},
+   {"date": "July 2026", "area": "Middle America and Gulf of Mexico", "source": "MarineTraffic"},
+   {"date": "June 2026", "area": "Middle America and Gulf of Mexico", "source": "MarineTraffic"},
+   {"date": "May 2026", "area": "Middle America and Gulf of Mexico, South America East Coast", "source": "MarineTraffic"},
+   {"date": "May 2026", "area": "Middle America and Gulf of Mexico, South America East Coast", "source": "VesselTracker"},
+   {"date": "April 2026", "area": "East Africa, South Africa", "source": "MarineTraffic"},
+   {"date": "April 2026", "area": "East Africa, South Africa", "source": "VesselTracker"},
+   {"date": "March 2026", "area": "Indian Ocean, Java Sea", "source": "AXS Marine"},
+   {"date": "March 2026", "area": "East Asia, South East Asia", "source": "MarineTraffic"},
+   {"date": "March 2026", "area": "South East Asia", "source": "VesselTracker"},
+   {"date": "February 2026", "area": "Singapore Strait, South China Sea", "source": "AXS Marine"},
+   {"date": "February 2026", "area": "East Asia, South East Asia", "source": "MarineTraffic"},
+   {"date": "February 2026", "area": "East Asia", "source": "VesselTracker"}
+  ]
+ }
+}

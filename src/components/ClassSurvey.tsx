@@ -34,10 +34,19 @@ export default function ClassSurvey({
   imo,
   society,
   notation,
+  equasis,
 }: {
   imo: string | null;
   society?: string;
   notation?: string;
+  equasis?: {
+    clsSociety?: string;
+    clsStatus?: string;
+    clsSince?: string;
+    surveyLast?: string;
+    surveyNext?: string;
+    pni?: string;
+  } | null;
 }) {
   const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
@@ -82,6 +91,30 @@ export default function ClassSurvey({
           )}
         </dl>
       )}
+
+      {equasis && (() => {
+        const rows: [string, string | undefined][] = [
+          [t("clsStatusLabel"), [equasis.clsSociety, equasis.clsStatus].filter(Boolean).join(" — ") || undefined],
+          [t("clsSinceLabel"), equasis.clsSince],
+          [t("surveyLastLabel"), equasis.surveyLast],
+          [t("surveyNextLabel"), equasis.surveyNext],
+          [t("pniLabel"), equasis.pni],
+        ].filter((r) => clean(r[1])) as [string, string][];
+        if (rows.length === 0) return null;
+        return (
+          <>
+            <dl className="mb-2 divide-y divide-border rounded-lg border border-border bg-surface-3/50">
+              {rows.map(([k, v]) => (
+                <div key={k} className="flex items-start justify-between gap-3 px-3 py-2 text-sm">
+                  <dt className="text-ink-soft">{k}</dt>
+                  <dd className="text-right font-medium text-ink">{v}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="mb-3 text-[11px] italic text-ink-soft">{t("equasisNote")}</p>
+          </>
+        );
+      })()}
 
       {imo ? (
         <>
