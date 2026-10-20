@@ -15786,5 +15786,7475 @@
     "source": "MarineTraffic"
    }
   ]
+ },
+ "8697366": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "19/08/2013",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "May 2026",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2024",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2023",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2023",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2023",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9242431": {
+  "clsSociety": "DNV (IACS)",
+  "clsSince": "12/06/2019",
+  "surveyLast": "06/12/2021",
+  "surveyNext": "14/12/2026",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9267388": {
+  "clsSociety": "Bureau Veritas (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "27/01/2023",
+  "surveyLast": "27/01/2023",
+  "surveyNext": "16/11/2027",
+  "pni": "Standard P&I Club per Charles Taylor & Co Inception at 23/12/2024",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "May 2026",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "North Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "October 2025",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2025",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2025",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "North Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2025",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9371579": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "23/10/2009",
+  "surveyLast": "03/08/2023",
+  "surveyNext": "19/08/2028",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "Middle America and Gulf of Mexico, South America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2026",
+    "area": "Middle America and Gulf of Mexico, South America East Coast",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Africa, South Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Africa, South Asia, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "July 2026",
+    "area": "West Africa, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2026",
+    "area": "West Africa, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "West Africa, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "East Africa, South America East Coast, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Africa, South East Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Africa, South East Asia, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "Mediterranean Sea, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "Mediterranean Sea, North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "Mediterranean Sea, North Europe, West Europe",
+    "source": "VesselTracker"
+   }
+  ]
+ },
+ "9439943": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "27/01/2011",
+  "surveyLast": "08/08/2025",
+  "surveyNext": "26/10/2030",
+  "pni": "Assuranceforeningen Skuld - Norway Inception at 27/10/2010",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2026",
+    "area": "West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2026",
+    "area": "South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South America East Coast, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2025",
+    "area": "South America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South America East Coast",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9473042": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "04/10/2022",
+  "surveyLast": "14/12/2025",
+  "surveyNext": "11/04/2030",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 20/02/2018",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9483059": {
+  "clsSociety": "China Corporation Register of Shipping",
+  "clsStatus": "Delivered",
+  "clsSince": "15/02/2019",
+  "surveyLast": "24/08/2021",
+  "surveyNext": "24/11/2026",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 01/09/2021",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "May 2025",
+    "area": "Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "East Africa, South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9534937": {
+  "clsSociety": "Biro Klasifikasi Indonesia",
+  "clsStatus": "Suspended",
+  "clsSince": "11/09/2026",
+  "surveyLast": "21/10/2024",
+  "surveyNext": "10/06/2029",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 23/03/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   }
+  ]
+ },
+ "9534951": {
+  "clsSociety": "Biro Klasifikasi Indonesia",
+  "clsStatus": "Suspended",
+  "clsSince": "09/03/2025",
+  "surveyLast": "30/06/2025",
+  "surveyNext": "08/03/2030",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 03/10/2011",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "Java Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "Java Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9558969": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "24/02/2011",
+  "surveyLast": "13/09/2025",
+  "surveyNext": "12/09/2030",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 18/06/2009",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9561851": {
+  "clsSociety": "China Classification Society (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "18/09/2015",
+  "surveyLast": "23/01/2026",
+  "surveyNext": "17/09/2030",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9570747": {
+  "clsSociety": "Korean Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "28/12/2018",
+  "surveyLast": "21/04/2022",
+  "surveyNext": "19/01/2027",
+  "pni": "Assuranceforeningen Skuld - Norway Inception at 26/09/2011",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9570759": {
+  "clsSociety": "Korean Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "23/02/2020",
+  "surveyLast": "16/09/2022",
+  "surveyNext": "03/02/2027",
+  "pni": "Assuranceforeningen Skuld - Norway Inception at 07/10/2011",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9571002": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "19/08/2021",
+  "surveyLast": "11/08/2025",
+  "surveyNext": "24/05/2030",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 19/12/2019",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9592848": {
+  "clsSociety": "China Corporation Register of Shipping",
+  "clsStatus": "Delivered",
+  "clsSince": "18/08/2015",
+  "surveyLast": "18/04/2022",
+  "surveyNext": "21/05/2027",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Africa, South America East Coast, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Africa, Middle America and Gulf of Mexico, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2026",
+    "area": "Indian Ocean, Java Sea, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Africa, South Asia, South East Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Africa, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2026",
+    "area": "South_Africa, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South_Africa, West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Africa, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "Malacca Strait, Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "East Asia, South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia, South East Asia",
+    "source": "VesselTracker"
+   }
+  ]
+ },
+ "9596351": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "05/01/2026",
+  "surveyLast": "21/09/2022",
+  "surveyNext": "07/02/2027",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 08/04/2013",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "Makassar Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "Makassar Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9602801": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "22/03/2012",
+  "surveyLast": "10/03/2022",
+  "surveyNext": "19/12/2026",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 05/01/2012",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9618226": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "06/01/2013",
+  "surveyLast": "06/01/2022",
+  "surveyNext": "05/01/2027",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 30/11/2011",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Africa, South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "South_Africa, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Africa, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2025",
+    "area": "South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South_Africa, West Africa",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9618238": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "05/08/2013",
+  "surveyLast": "09/02/2022",
+  "surveyNext": "08/02/2027",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 30/11/2013",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "West Africa",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9628855": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "27/07/2012",
+  "surveyLast": "14/01/2022",
+  "surveyNext": "26/03/2027",
+  "geo": [
+   {
+    "date": "September 2026",
+    "area": "North Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "North Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "July 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "May 2026",
+    "area": "North Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "North Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "Mediterranean Sea, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "November 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "Mediterranean Sea",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9639218": {
+  "clsSociety": "China Classification Society (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "13/04/2026",
+  "surveyLast": "13/04/2026",
+  "surveyNext": "12/04/2031",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2025",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2024",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2024",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2023",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2023",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2023",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2023",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2023",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "May 2017",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2017",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2016",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2016",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2016",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2016",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2016",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2016",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9653874": {
+  "clsSociety": "China Corporation Register of Shipping",
+  "clsStatus": "Withdrawn",
+  "clsSince": "21/09/2022",
+  "surveyLast": "15/02/2025",
+  "surveyNext": "24/04/2030",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "West Africa, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "West Africa, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "Indian Ocean, Java Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Africa, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Makassar Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   }
+  ]
+ },
+ "9671539": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Withdrawn",
+  "clsSince": "02/10/2013",
+  "surveyLast": "18/04/2023",
+  "surveyNext": "18/04/2028",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9671541": {
+  "clsSociety": "Bureau Veritas (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "08/01/2014",
+  "surveyLast": "24/07/2023",
+  "surveyNext": "22/10/2028",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9680504": {
+  "clsSociety": "Biro Klasifikasi Indonesia",
+  "clsStatus": "Suspended",
+  "clsSince": "26/04/2026",
+  "surveyLast": "08/01/2025",
+  "surveyNext": "12/11/2028",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 20/02/2015",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "Java Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "Java Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "Java Sea, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   }
+  ]
+ },
+ "9750854": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "26/04/2016",
+  "surveyLast": "19/02/2026",
+  "surveyNext": "28/02/2031",
+  "pni": "Hydor AS Inception at 01/01/2025",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9769659": {
+  "clsSociety": "Nippon Kaiji Kyokai (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "16/05/2018",
+  "surveyLast": "25/09/2023",
+  "surveyNext": "15/05/2028",
+  "pni": "Assuranceforeningen Skuld - Norway Inception at 09/05/2018",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9795232": {
+  "clsSociety": "Vietnam Register of Shipping",
+  "clsStatus": "Delivered",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2023",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2023",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2023",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2023",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2023",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2023",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2022",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2022",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9833357": {
+  "clsSociety": "Registro Italiano Navale (IACS)",
+  "clsStatus": "Withdrawn",
+  "clsSince": "03/01/2019",
+  "surveyLast": "04/05/2023",
+  "surveyNext": "03/05/2028",
+  "pni": "Assuranceforeningen Skuld - Norway Inception at 18/05/2018",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "November 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "1078468": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsSince": "15/07/2026",
+  "surveyLast": "04/01/2026",
+  "surveyNext": "04/01/2031",
+  "pni": "Assuranceforeningen Skuld - Norway Inception at 01/01/2026",
+  "geo": [
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "East Asia",
+    "source": "VesselTracker"
+   }
+  ]
+ },
+ "8616556": {
+  "clsSociety": "DNV (IACS)",
+  "surveyLast": "04/01/2024",
+  "surveyNext": "31/01/2029",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "East Africa, South_Africa, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2026",
+    "area": "East Africa, South_Africa, West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2026",
+    "area": "Malacca Strait, Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Africa, South Asia, South East Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2026",
+    "area": "South_Africa, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South_Africa, West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "May 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "Middle America and Gulf of Mexico, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "Middle America and Gulf of Mexico, North America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "Middle America and Gulf of Mexico, North America East Coast",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Africa, South_Africa, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "November 2025",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "East Africa, South East Asia, South_Africa",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "8763701": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "22/03/2001",
+  "surveyLast": "10/04/2025",
+  "surveyNext": "30/09/2029",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 06/03/2007",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9243837": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "02/10/2004",
+  "surveyLast": "07/02/2024",
+  "surveyNext": "09/02/2029",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "September 2026",
+    "area": "East Africa, South Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Africa, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "Australia and New Zeeland, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "Australia and New Zeeland, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "October 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2025",
+    "area": "East Africa, East Asia, South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "East Africa, East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2025",
+    "area": "East Africa, South_Africa, West Africa, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South_Africa, West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "West Europe",
+    "source": "VesselTracker"
+   }
+  ]
+ },
+ "9243849": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "01/01/2006",
+  "surveyLast": "08/07/2024",
+  "surveyNext": "08/07/2029",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "West Africa, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2026",
+    "area": "West Africa, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2026",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia, South East Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Africa, South East Asia, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2026",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia, South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2026",
+    "area": "East Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "East Africa, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "May 2026",
+    "area": "Mediterranean Sea, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "Mediterranean Sea",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "Mediterranean Sea, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "Mediterranean Sea",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Africa, South_Africa, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Africa, South_Africa, West Africa, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "Malacca Strait, Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9371581": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "22/03/2010",
+  "surveyLast": "25/07/2024",
+  "surveyNext": "28/05/2029",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "East Asia, North America West Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2026",
+    "area": "North America West Coast",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Africa, South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Africa, South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "Mediterranean Sea, South Asia, South_Africa, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "Mediterranean Sea, South_Africa, West Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2026",
+    "area": "Mediterranean Sea, South Asia, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Mediterranean Sea, South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "North America East Coast, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "North America East Coast, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "Mediterranean Sea, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "November 2025",
+    "area": "Mediterranean Sea, North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "Mediterranean Sea, North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "October 2025",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   }
+  ]
+ },
+ "9411240": {
+  "clsSociety": "Registro Italiano Navale (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "02/08/2021",
+  "surveyLast": "05/02/2023",
+  "surveyNext": "05/02/2028",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 01/01/2024",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9427873": {
+  "clsSociety": "Vietnam Register of Shipping",
+  "clsStatus": "Withdrawn",
+  "clsSince": "27/05/2010",
+  "surveyLast": "10/11/2024",
+  "surveyNext": "19/11/2029",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 27/03/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   }
+  ]
+ },
+ "9537824": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "01/05/2022",
+  "surveyLast": "04/09/2025",
+  "surveyNext": "22/10/2029",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 20/02/2018",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9540780": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "29/09/2018",
+  "surveyLast": "07/04/2025",
+  "surveyNext": "06/04/2030",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 29/04/2024",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9546526": {
+  "clsSociety": "Bureau Veritas (IACS)",
+  "clsStatus": "Withdrawn",
+  "clsSince": "29/02/2024",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 15/02/2024",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9549700": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "24/05/2012",
+  "surveyLast": "31/07/2022",
+  "surveyNext": "23/02/2027",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 31/03/2012",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9576686": {
+  "clsSociety": "Registro Italiano Navale (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "02/08/2021",
+  "surveyLast": "17/08/2024",
+  "surveyNext": "17/08/2029",
+  "pni": "The West of England Shipowners Inception at 01/10/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9578828": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "23/04/2013",
+  "surveyLast": "23/05/2023",
+  "surveyNext": "14/01/2028",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 06/12/2023",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9586954": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "24/03/2011",
+  "surveyLast": "06/07/2026",
+  "surveyNext": "19/01/2031",
+  "pni": "Steamship Mutual Underwriting Association (Bermuda) Inception at 21/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9603843": {
+  "clsSociety": "Vietnam Register of Shipping",
+  "clsStatus": "Delivered",
+  "pni": "The West of England Shipowners Inception at 01/10/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "Java Sea, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "Java Sea, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "Java Sea, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   }
+  ]
+ },
+ "9634165": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "22/12/2014",
+  "surveyLast": "05/05/2025",
+  "surveyNext": "21/12/2029",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "Makassar Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "July 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia, South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "Malacca Strait, Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "Malacca Strait, Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "East Asia, South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia, South East Asia",
+    "source": "VesselTracker"
+   }
+  ]
+ },
+ "9645164": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "01/07/2014",
+  "surveyLast": "01/07/2024",
+  "surveyNext": "26/05/2029",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 27/05/2014",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9645176": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "30/11/2013",
+  "surveyLast": "11/06/2023",
+  "surveyNext": "10/06/2028",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 01/06/2012",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9646326": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "13/12/2013",
+  "surveyLast": "14/03/2024",
+  "surveyNext": "12/12/2028",
+  "pni": "Standard P&I Club per Charles Taylor & Co Inception at 23/12/2024",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2026",
+    "area": "North Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "North Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "North Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "North Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "North Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "North Europe, West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "North Europe, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "November 2025",
+    "area": "West Europe",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "North America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2025",
+    "area": "North America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "North America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "North America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "North America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "North America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "North America East Coast, West Europe",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9648568": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "17/12/2015",
+  "surveyLast": "25/02/2026",
+  "surveyNext": "26/01/2031",
+  "pni": "UK P&I Club Inception at 01/06/2012",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "East Asia, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "February 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9650585": {
+  "clsSociety": "Lloyd's Register (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "15/06/2015",
+  "surveyLast": "13/10/2025",
+  "surveyNext": "14/06/2030",
+  "pni": "Assuranceforeningen Gard - Norway Inception at 20/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "East Asia, North America West Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2026",
+    "area": "East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia, North America West Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "North America West Coast",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Africa, South Asia, South East Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia, South East Asia, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "June 2026",
+    "area": "Middle America and Gulf of Mexico, South America East Coast",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South America East Coast, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "Middle America and Gulf of Mexico, South America East Coast, South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "April 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Africa, South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2026",
+    "area": "Middle America and Gulf of Mexico",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Mediterranean Sea, Middle America and Gulf of Mexico, West Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "Mediterranean Sea, Middle America and Gulf of Mexico, West Africa, West Europe",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "Indian Ocean, Java Sea, Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia, South_Africa",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South_Africa",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "Malacca Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "November 2025",
+    "area": "East Africa, South Asia, South_Africa, West Africa",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9671383": {
+  "clsSociety": "Bureau Veritas (IACS)",
+  "clsStatus": "Withdrawn",
+  "clsSince": "18/05/2021",
+  "surveyLast": "10/02/2024",
+  "surveyNext": "26/06/2028",
+  "pni": "The West of England Shipowners Inception at 01/10/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9694062": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "04/02/2026",
+  "surveyLast": "25/02/2025",
+  "surveyNext": "15/04/2029",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 20/02/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "December 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9721205": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "19/08/2021",
+  "surveyLast": "30/05/2026",
+  "surveyNext": "20/07/2031",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 01/01/2024",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9728502": {
+  "clsSociety": "China Classification Society (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "30/01/2019",
+  "surveyLast": "23/01/2024",
+  "surveyNext": "29/01/2029",
+  "pni": "The London P&I Club Inception at 09/09/2026",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "January 2026",
+    "area": "Malacca Strait, Singapore Strait, South China Sea",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "August 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "East Asia, South East Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9730529": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "23/01/2025",
+  "surveyLast": "13/06/2024",
+  "surveyNext": "12/06/2029",
+  "pni": "Assuranceforeningen Skuld - Norway Inception at 26/07/2024",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "January 2026",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "December 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "November 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "October 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "September 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "August 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   },
+   {
+    "date": "July 2025",
+    "area": "South East Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "Singapore Strait",
+    "source": "AXS Marine"
+   }
+  ]
+ },
+ "9776028": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "20/06/2024",
+  "surveyLast": "24/06/2026",
+  "surveyNext": "14/06/2031",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 22/04/2024",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
+ },
+ "9821574": {
+  "clsSociety": "American Bureau of Shipping (IACS)",
+  "clsStatus": "Delivered",
+  "clsSince": "23/01/2020",
+  "surveyLast": "17/11/2024",
+  "surveyNext": "19/11/2029",
+  "pni": "The Ship owners' Mutual P&I Association (Luxembourg) Inception at 24/12/2019",
+  "geo": [
+   {
+    "date": "October 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "March 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2026",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "November 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "October 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "September 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "August 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "July 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "June 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "May 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "April 2025",
+    "area": "South Asia",
+    "source": "VesselTracker"
+   },
+   {
+    "date": "March 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "February 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "January 2025",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   },
+   {
+    "date": "December 2024",
+    "area": "South Asia",
+    "source": "MarineTraffic"
+   }
+  ]
  }
 }
