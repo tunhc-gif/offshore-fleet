@@ -2058,7 +2058,7 @@
   {
     "id": "seafox-9",
     "displayName": "SEAFOX 9",
-    "nameNote": "Spec sheet ghi tên tàu là 'Seafox TBN (200POB)' (newbuild). Variable load (jacking/elevated): 1100 MT. Deck strength: 5 t/m² & 7.5 t/m². Jacking type: Electro Motors / Rack & Pinion. Propulsion: 2 CPP azimuth thrusters @ 1800 kW + 2 CPP azimuth thrusters @ 800 kW. LSA: Lifeboats 2 x 150 man + 2 x 50 man; Liferafts 8 x 25 POB DL Type. Helideck compliant CAP 437. Facilities: Offices, Conference rooms, Gym, Prayer room, TV room, recreation rooms, mess rooms.",
+    "nameNote": "Spec sheet ghi tên tàu là 'Seafox TBN (200POB)' (newbuild). Variable load (jacking/elevated): 1100 MT. Deck strength: 5 t/m² & 7.5 t/m². Jacking type: Electro Motors / Rack & Pinion. Propulsion: 2 CPP azimuth thrusters @ 1800 kW + 2 CPP azimuth thrusters @ 800 kW. LSA: Lifeboats 2 x 150 man + 2 x 50 man; Liferafts 8 x 25 POB DL Type. Helideck compliant CAP 437. Facilities: Offices, Conference rooms, Gym, Prayer room, TV room, recreation rooms, mess rooms. IMO 9787649 trước đây gán nhầm (thuộc tàu khác: QIN SHI 01); SEAFOX 9 là tàu đóng mới 2025 (TBN), chưa xác minh IMO.",
     "idName": "Seafox TBN",
     "idType": "DP2 Self Propelled, Self Elevating 4-legged liftboat",
     "idOwner": "Không tìm thấy",
@@ -2066,7 +2066,7 @@
     "idPort": "Không tìm thấy",
     "idClassSociety": "ABS",
     "idNotation": "Không tìm thấy",
-    "idImo": "9787649",
+    "idImo": "Không tìm thấy",
     "idCallsign": "Không tìm thấy",
     "idMmsi": "Không tìm thấy",
     "idAbsNo": "Không tìm thấy",
