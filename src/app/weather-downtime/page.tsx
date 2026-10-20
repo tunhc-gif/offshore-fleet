@@ -129,14 +129,22 @@ function exportWeatherDowntimeXls(
     `<th style="background:#1e4e79;color:#ffffff;font-weight:bold;border:1px solid #17324f;padding:6px 8px;text-align:center;vertical-align:middle">${esc(label)}</th>`;
   const td = (v: unknown, align = "center", extra = "") =>
     `<td style="border:1px solid #b9c6d4;padding:5px 8px;text-align:${align};${extra}">${esc(v)}</td>`;
+  // Formula cell: Excel uses x:fmla (live, recomputes on edit); the text is a fallback.
+  const tdf = (formula: string, v: unknown, align = "right", extra = "") =>
+    `<td x:fmla="${esc(formula)}" style="border:1px solid #b9c6d4;padding:5px 8px;text-align:${align};${extra}">${esc(v)}</td>`;
+
+  const DATA_START = 4; // row 1 = title, 2 = note, 3 = header, data begins at 4
+  const ms = rows.map((r) => computeRow(r, vesselsByType, limitsByType, mechConfig));
 
   const body = rows
     .map((r, i) => {
-      const m = computeRow(r, vesselsByType, limitsByType, mechConfig);
+      const m = ms[i];
       const vesselName = r.vesselId === "typical" ? (vi ? "Điển hình" : "Typical") : m.vessel?.displayName ?? r.vesselId;
       const relocLim = `${m.limits.relocation.hs} / ${m.limits.relocation.windKn}`;
       const workLim = `${m.limits.working.hs} / ${m.limits.working.windKn}`;
       const zebra = i % 2 ? "background:#f4f8fb;" : "";
+      const R = i + DATA_START; // this row's Excel row number
+      const totFill = "background:#fce4d6;font-weight:bold;color:#c0504d;";
       return (
         "<tr>" +
         td(i + 1, "center", zebra) +
@@ -145,29 +153,53 @@ function exportWeatherDowntimeXls(
         td(areaName(r.area), "left", zebra) +
         td(r.start, "center", zebra) +
         td(r.finish, "center", zebra) +
-        td(m.duration, "center", zebra + "font-weight:bold;") +
+        td(m.duration, "center", zebra + "font-weight:bold;") +                 // G (editable)
         td(relocLim, "center", zebra) +
         td(workLim, "center", zebra) +
-        td(m.relocWDT.toFixed(1), "right", zebra) +
-        td(pctOf(m.relocWDT, m.relocSpan) + "%", "right", zebra) +
-        td(m.workingWDT.toFixed(1), "right", zebra) +
-        td(pctOf(m.workingWDT, m.workSpan) + "%", "right", zebra) +
-        td(m.mechDays.toFixed(1), "right", zebra) +
-        td(Math.round(m.mechRate * 1000) / 10 + "%", "right", zebra) +
-        td(m.totalDT.toFixed(1), "right", "background:#fce4d6;font-weight:bold;color:#c0504d;") +
-        td(pctOf(m.totalDT, m.duration) + "%", "right", "background:#fce4d6;font-weight:bold;color:#c0504d;") +
-        td((m.duration + m.totalDT).toFixed(1), "right", zebra + "font-weight:bold;") +
+        td(m.relocWDT.toFixed(1), "right", zebra) +                             // J (editable)
+        td(pctOf(m.relocWDT, m.relocSpan) + "%", "right", zebra) +             // K
+        td(m.workingWDT.toFixed(1), "right", zebra) +                           // L (editable)
+        td(pctOf(m.workingWDT, m.workSpan) + "%", "right", zebra) +           // M
+        td(m.mechDays.toFixed(1), "right", zebra) +                             // N (editable)
+        td(Math.round(m.mechRate * 1000) / 10 + "%", "right", zebra) +         // O
+        tdf(`=J${R}+L${R}+N${R}`, m.totalDT.toFixed(1), "right", totFill) +     // P = total downtime (formula)
+        tdf(`=IF(G${R}>0,P${R}/G${R},0)`, pctOf(m.totalDT, m.duration) / 100, "right", totFill + "mso-number-format:'0.0%';") + // Q = total % (formula)
+        tdf(`=G${R}+P${R}`, (m.duration + m.totalDT).toFixed(1), "right", zebra + "font-weight:bold;") + // R = total duration (formula)
         "</tr>"
       );
     })
     .join("");
 
+  // Grand-total SUM row (live formulas; fallback text = precomputed sums).
+  const sum = (sel: (m: (typeof ms)[number]) => number) =>
+    ms.reduce((a, m) => a + sel(m), 0);
+  const last = rows.length + DATA_START - 1;
+  const sumFill = "font-weight:bold;background:#dbe5f1;";
+  const totalsRow =
+    rows.length > 0
+      ? "<tr>" +
+        `<td colspan="6" style="border:1px solid #17324f;background:#1e4e79;color:#fff;font-weight:bold;padding:6px 8px;text-align:right">${esc(vi ? "TỔNG CỘNG" : "TOTAL")}</td>` +
+        tdf(`=SUM(G${DATA_START}:G${last})`, sum((m) => m.duration).toFixed(1), "center", sumFill) +
+        td("", "center", sumFill) +
+        td("", "center", sumFill) +
+        tdf(`=SUM(J${DATA_START}:J${last})`, sum((m) => m.relocWDT).toFixed(1), "right", sumFill) +
+        td("", "right", sumFill) +
+        tdf(`=SUM(L${DATA_START}:L${last})`, sum((m) => m.workingWDT).toFixed(1), "right", sumFill) +
+        td("", "right", sumFill) +
+        tdf(`=SUM(N${DATA_START}:N${last})`, sum((m) => m.mechDays).toFixed(1), "right", sumFill) +
+        td("", "right", sumFill) +
+        tdf(`=SUM(P${DATA_START}:P${last})`, sum((m) => m.totalDT).toFixed(1), "right", "font-weight:bold;background:#fce4d6;color:#c0504d;") +
+        td("", "right", sumFill) +
+        tdf(`=SUM(R${DATA_START}:R${last})`, sum((m) => m.duration + m.totalDT).toFixed(1), "right", sumFill) +
+        "</tr>"
+      : "";
+
   const now = new Date();
   const stamp = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
   const title = vi ? "PHÂN TÍCH WEATHER DOWNTIME" : "WEATHER DOWNTIME ANALYSIS";
   const note = vi
-    ? `Xuất ngày ${stamp} · Offshore Fleet Platform (POS) · Mechanical downtime đồng đều ${mechConfig.rateUnknown}% cho mọi tàu · Downtime thời tiết = 100% − (khả dụng gió × khả dụng sóng).`
-    : `Exported ${stamp} · Offshore Fleet Platform (POS) · Flat mechanical downtime ${mechConfig.rateUnknown}% for every vessel · Weather downtime = 100% − (wind availability × wave availability).`;
+    ? `Xuất ngày ${stamp} · Offshore Fleet Platform (POS) · Mechanical downtime đồng đều ${mechConfig.rateUnknown}% cho mọi tàu · Downtime thời tiết = 100% − (khả dụng gió × khả dụng sóng). · CÔNG THỨC: cột "TỔNG downtime" = Downtime di chuyển + thi công + Mechanical; "Tổng %" = Tổng downtime ÷ Thời lượng; "Tổng thời gian" = Thời lượng + Tổng downtime; dòng TỔNG CỘNG = SUM — sửa các số thành phần là tự tính lại.`
+    : `Exported ${stamp} · Offshore Fleet Platform (POS) · Flat mechanical downtime ${mechConfig.rateUnknown}% for every vessel · Weather downtime = 100% − (wind availability × wave availability). · FORMULAS: "TOTAL downtime" = reloc + working + mechanical; "Total %" = total downtime ÷ duration; "Total duration" = duration + total downtime; TOTAL row = SUM — edit the component figures and these recalculate.`;
 
   const html =
     `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">` +
@@ -180,6 +212,7 @@ function exportWeatherDowntimeXls(
     `<tr><td colspan="18" style="background:#eef3f8;color:#33475b;font-style:italic;padding:6px 8px">${esc(note)}</td></tr>` +
     `<tr>${headers.map(th).join("")}</tr>` +
     body +
+    totalsRow +
     `</table></body></html>`;
 
   const blob = new Blob(["﻿" + html], { type: "application/vnd.ms-excel;charset=utf-8" });
