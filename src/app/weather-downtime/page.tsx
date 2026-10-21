@@ -23,6 +23,8 @@ import { parseCsv } from "@/lib/csv";
 import { WD_LIMITS_CSV_URL } from "@/config/weatherLimitsSource";
 
 const REF_YEAR = new Date().getFullYear();
+// Default planning window for new rows = next calendar year (campaigns are planned ahead).
+const PLAN_YEAR = REF_YEAR + 1;
 
 type Row = {
   id: number;
@@ -53,8 +55,8 @@ function newRow(id: number): Row {
     type: "jub",
     vesselId: "typical",
     area: AREAS[0]?.slug ?? "",
-    start: `${REF_YEAR}-01-01`,
-    finish: `${REF_YEAR}-03-31`,
+    start: `${PLAN_YEAR}-01-01`,
+    finish: `${PLAN_YEAR}-03-31`,
     setupDays: 10,
     relocProb: 1,
   };
