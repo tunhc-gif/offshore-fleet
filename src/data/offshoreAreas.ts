@@ -355,13 +355,36 @@ export const offshoreFields: OffshoreField[] = [
     mapLat: 28.4389,
     mapLng: 49.6746,
   },
+  {
+    slug: "abu-safah",
+    countrySlug: "ksa",
+    region: "Abu Sa'fah (Saudi Aramco)",
+    nameVi: "Abu Sa'fah (Vịnh Ba Tư)",
+    nameEn: "Abu Sa'fah (Arabian Gulf)",
+    lat: "26.7900° N",
+    lon: "50.4312° E",
+    waterDepth: "≈15–20 m",
+    nearestPort: "Jubail / Ras Tanura (KSA)",
+    dataSource:
+      "ERA5 reanalysis (ECMWF) tại điểm 26.7900° N, 50.4312° E — chuỗi giờ 2006-01 → 2026-10 (182.184 bản ghi). Gió: wind_speed_10m (nguồn m/s, quy đổi sang knot ×1.94384). Sóng: wave_height Hs (m). Phân bố % tần suất theo tháng tính trực tiếp từ chuỗi thời gian ERA5 (không nội suy, không bịa).",
+    statPeriod: "Thống kê theo tháng từ hindcast ERA5 2006–2026 (~20,8 năm)",
+    lastUpdated: "ERA5 tới 2026-10 · tích hợp 2026-10",
+    windMeta: "Gió tại độ cao 10 m (knot) — ERA5 hourly (quy đổi từ m/s)",
+    waveMeta: "Chiều cao sóng ý nghĩa Hs (m) — ERA5 hourly",
+    dataKind: "Hindcast (ERA5 / ECMWF)",
+    sample: false,
+    defaultWindLimit: 23,
+    defaultHsLimit: 1.5,
+    mapLat: 26.79,
+    mapLng: 50.4312,
+  },
 ];
 
 // Region ordering per country (for grouping on the country page).
 export const regionsByCountry: Record<string, string[]> = {
   vietnam: ["Vũng Tàu", "Nam Côn Sơn", "Cửu Long", "Malay – Thổ Chu", "Sông Hồng"],
   qatar: ["Maydan Mahzam", "Sensor Tower Platforms (Halul)", "Bul Hanine", "North Field"],
-  ksa: ["Marjan (Saudi Aramco)", "Arabian Gulf (Saudi Aramco)"],
+  ksa: ["Marjan (Saudi Aramco)", "Abu Sa'fah (Saudi Aramco)", "Arabian Gulf (Saudi Aramco)"],
   nigeria: ["OML 112 (Niger Delta)"],
   thailand: ["Block B8/32 (Gulf of Thailand)"],
   myanmar: ["Biển Andaman"],
