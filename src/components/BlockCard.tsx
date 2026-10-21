@@ -8,14 +8,17 @@ type Props = {
   desc: string;
   accent?: boolean;
   badge?: string;
+  // Force a real document navigation (plain <a>) instead of client-side routing.
+  // Needed for gated routes so the Cloudflare access middleware actually runs.
+  hardNav?: boolean;
 };
 
-export default function BlockCard({ href, icon: Icon, title, desc, accent, badge }: Props) {
-  return (
-    <Link
-      href={href}
-      className="glass-card group relative flex flex-col justify-between overflow-hidden rounded-xl2 p-6 transition hover:-translate-y-1 hover:shadow-2xl"
-    >
+const CARD_CLS =
+  "glass-card group relative flex flex-col justify-between overflow-hidden rounded-xl2 p-6 transition hover:-translate-y-1 hover:shadow-2xl";
+
+export default function BlockCard({ href, icon: Icon, title, desc, accent, badge, hardNav }: Props) {
+  const inner = (
+    <>
       <span className="absolute -right-8 -top-8 h-28 w-28 rotate-45 bg-brand-500/10 transition group-hover:bg-accent/15" />
       <div className="relative z-10">
         <div className="mb-4 flex items-center justify-between">
@@ -35,6 +38,22 @@ export default function BlockCard({ href, icon: Icon, title, desc, accent, badge
         <span>→</span>
         <ChevronRight size={14} />
       </div>
+    </>
+  );
+
+  if (hardNav) {
+    const bp = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    const full = href.startsWith("/") ? bp + href : href;
+    return (
+      <a href={full} className={CARD_CLS}>
+        {inner}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href} className={CARD_CLS}>
+      {inner}
     </Link>
   );
 }

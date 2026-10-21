@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Info, Radar, ExternalLink, CloudRain, ChevronRight, Camera } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
@@ -145,8 +144,10 @@ export default function VesselDetailPage({
 
       {equasis?.geo && equasis.geo.length > 0 && <VesselHistory rows={equasis.geo} />}
 
-      <Link
-        href={`/weather-downtime?type=${params.type}&vessel=${vessel.id}`}
+      {/* Plain <a> (not next/link): forces a real document request so the Cloudflare
+          access gate on /weather-downtime actually runs. basePath kept for GitHub Pages. */}
+      <a
+        href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/weather-downtime?type=${params.type}&vessel=${vessel.id}`}
         className="cta-accent group mb-6 flex items-center justify-between gap-3 rounded-xl2 p-5 transition hover:border-accent"
       >
         <div className="flex items-start gap-3">
@@ -159,7 +160,7 @@ export default function VesselDetailPage({
           </div>
         </div>
         <ChevronRight size={18} className="shrink-0 text-accent transition group-hover:translate-x-0.5" />
-      </Link>
+      </a>
 
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         {vesselSections
