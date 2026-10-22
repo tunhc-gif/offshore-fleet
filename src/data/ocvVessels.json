@@ -1787,7 +1787,7 @@
   {
     "id": "telford-33",
     "displayName": "TELFORD 33",
-    "nameNote": "Không tìm thấy",
+    "nameNote": "Cùng một hull (IMO 9786255) với tên khác: GUO HAI AN HONG (vận hành bởi bên thuê TQ; khu vực Vịnh Ba Tư & Tây Phi) — trước đó African Provider (theo VesselsValue). GT 20.047 t. Chi tiết bổ sung từ spec 'GUO HAI AN HONG': scantling draft 6.50m; hệ thống neo 8 điểm (MEP AS 8.500/H, 8× neo 8t, cáp 52mm×1500m); cầu hành khách bù chuyển động Marine Aluminium telescopic (dài tối đa 42.5m, vận hành 36.5m, giới hạn gió 36 m/s); folding boom crane MacGregor MG-HMC1400 10t @20m; máy tạo nước ngọt 3×200 t/ngày; xuồng cứu sinh 6×100 người.",
     "idName": "Telford 33",
     "idType": "Multipurpose DP3 vessel for offshore accommodation, hook up and construction",
     "idOwner": "Telford Offshore International Ltd.",
@@ -1843,10 +1843,10 @@
     "pwrMainGenDesc": "Main Generators (MAN) 6 x Diesel engines type MAN/8127/38",
     "pwrMainGenUnitEkw": "2640 kW",
     "pwrMainGenTotalEkw": "15840 kW (6 x 2640 kW)",
-    "pwrEmergGenDesc": "Không tìm thấy",
-    "pwrEmergGenEkw": "Không tìm thấy",
+    "pwrEmergGenDesc": "1x MAN D 2842 LE 203, 500 kW",
+    "pwrEmergGenEkw": "500 kW",
     "pwrBowThruster": "Không tìm thấy",
-    "pwrAftThruster": "Không tìm thấy",
+    "pwrAftThruster": "Propulsion: 6x ABB AZIPOD azimuth thrusters, 1900 kW x 300 rpm each (bow & stern), 4 blades, fixed pitch",
     "pwrDpClass": "DP3 (Kongsberg K-POS 22/12, DPS-3)",
     "tankFoTotalM3": "3200.0m3 (Fuel Oil)",
     "tankFwTotalM3": "2500.0m3 (Fresh Water)",
@@ -1875,8 +1875,8 @@
     "srcDoc": "Telford 33 Vessel Factsheet_updated 02.10.2025.pdf",
     "srcDate": "02.10.2025 (updated)",
     "cargoDeckArea": "Approx 2000m2 (Wooden Deck 1610m2, Under Deck 450m2); Deck Load 15t/m2",
-    "speedKn": "Không tìm thấy",
-    "bollardPullT": "Không tìm thấy",
+    "speedKn": "8.7 knots (short self voyage)",
+    "bollardPullT": "30.0 t",
     "dwt": "8018t"
   },
   {
