@@ -24,6 +24,15 @@ export const defaultLimitsByType: Record<string, TypeLimits> = {
   crewboat: { relocation: { hs: 2.0, windKn: 25 }, working: { hs: 1.5, windKn: 20 }, fromReference: false },
 };
 
+// Per-vessel WORKING-limit overrides, keyed by vessel id. Independent of the data
+// source, so they apply even when vessels load from the remote Google Sheet (which
+// has no per-vessel limit columns). Hs in metres, wind in knots. Add an entry when a
+// specific vessel has its own documented operating envelope.
+export const vesselWorkingOverride: Record<string, ModeLimit> = {
+  // Telford 33 (a.k.a. Guo Hai An Hong, IMO 9786255): working Hs 10 ft (3 m) / wind 30 kn.
+  "telford-33": { hs: 3.0, windKn: 30 },
+};
+
 // Mechanical-downtime coefficients (percent), estimated from vessel age.
 // Editable via Google Sheets (rows mechRateUnder10 / mechRate10to15 /
 // mechRateOver15 / mechRateUnknown / mechAgeLow / mechAgeHigh).
@@ -159,6 +168,23 @@ export function resolveLimits(
   if (wWind !== null) {
     // opsCraneWind on JUB manuals is typically m/s; convert to knots for the table.
     out.working = { hs: def.working.hs, windKn: Math.round(wWind * 1.94384 * 10) / 10 };
+    out.workingSource = "vessel";
+  }
+
+  // Explicit per-vessel WORKING limits (Hs m + wind kn as bare numbers) take priority
+  // for the working mode — used when a vessel documents its own operating envelope.
+  const wWaveExp = pureNum(vessel.opsWorkingWaveM);
+  const wWindExp = pureNum(vessel.opsWorkingWindKn);
+  if (wWaveExp !== null && wWindExp !== null) {
+    out.working = { hs: wWaveExp, windKn: wWindExp };
+    out.workingSource = "vessel";
+  }
+
+  // Highest priority: an explicit code-level per-vessel working override (works
+  // regardless of whether vessel data came from the sheet or the bundle).
+  const ov = vessel.id ? vesselWorkingOverride[vessel.id] : undefined;
+  if (ov) {
+    out.working = { ...ov };
     out.workingSource = "vessel";
   }
   return out;

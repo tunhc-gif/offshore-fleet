@@ -1870,6 +1870,8 @@
     "opsJackingWind": "Không áp dụng",
     "opsJackingWave": "Không áp dụng",
     "opsCraneWind": "Không tìm thấy",
+    "opsWorkingWaveM": "3",
+    "opsWorkingWindKn": "30",
     "opsAirTemp": "Không tìm thấy",
     "opsSeaTemp": "Không tìm thấy",
     "srcDoc": "Telford 33 Vessel Factsheet_updated 02.10.2025.pdf",

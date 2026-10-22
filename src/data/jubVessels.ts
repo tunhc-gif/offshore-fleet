@@ -86,6 +86,10 @@ export type JubVessel = {
   opsJackingWind: string | number;
   opsJackingWave: string | number;
   opsCraneWind: string | number;
+  // Optional explicit per-vessel WORKING limits (bare numbers: Hs in m, wind in kn).
+  // When both are set they override the type-default working limit in the WDT calc.
+  opsWorkingWaveM?: string | number;
+  opsWorkingWindKn?: string | number;
   opsAirTemp: string;
   opsSeaTemp: string;
   srcDoc: string;
