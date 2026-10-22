@@ -5,6 +5,7 @@ import BlockCard from "@/components/BlockCard";
 import { useLanguage } from "@/context/LanguageContext";
 import { useVesselData } from "@/context/VesselDataContext";
 import { countries } from "@/data/countries";
+import { wdtHref } from "@/lib/wdt";
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -50,7 +51,7 @@ export default function HomePage() {
           badge={`${countries.length}`}
         />
         <BlockCard
-          href="/weather-downtime"
+          href={wdtHref()}
           icon={CloudRain}
           title={t("blockWeatherTitle")}
           desc={t("blockWeatherDesc")}

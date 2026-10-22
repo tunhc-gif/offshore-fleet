@@ -21,6 +21,7 @@ import {
 import { monthDayCounts, weatherDowntimeDays, totalDays } from "@/lib/weather";
 import { parseCsv } from "@/lib/csv";
 import { WD_LIMITS_CSV_URL } from "@/config/weatherLimitsSource";
+import { WDT_EXTERNAL } from "@/lib/wdt";
 
 const REF_YEAR = new Date().getFullYear();
 // Default planning window for new rows = next calendar year (campaigns are planned ahead).
@@ -226,7 +227,33 @@ function exportWeatherDowntimeXls(
   URL.revokeObjectURL(url);
 }
 
+// On the public GitHub Pages build (NEXT_PUBLIC_WDT_URL set) this route is only a
+// redirect to the gated Cloudflare copy; the actual tool runs there behind the gate.
 export default function WeatherDowntimePage() {
+  if (WDT_EXTERNAL) return <WdtRedirect />;
+  return <WeatherDowntimeTool />;
+}
+
+function WdtRedirect() {
+  useEffect(() => {
+    const q = typeof window !== "undefined" ? window.location.search : "";
+    window.location.replace(WDT_EXTERNAL + q);
+  }, []);
+  return (
+    <div className="mx-auto max-w-md px-6 py-20 text-center text-ink-soft">
+      <p className="text-sm">Đang chuyển tới công cụ Weather Downtime (yêu cầu quyền truy cập)…</p>
+      <p className="mt-3 text-xs">
+        Nếu trình duyệt không tự chuyển,{" "}
+        <a href={WDT_EXTERNAL} className="font-semibold text-accent underline">
+          bấm vào đây
+        </a>
+        .
+      </p>
+    </div>
+  );
+}
+
+function WeatherDowntimeTool() {
   const { t, locale } = useLanguage();
   const { vesselsByType } = useVesselData();
   const idRef = useRef(1);

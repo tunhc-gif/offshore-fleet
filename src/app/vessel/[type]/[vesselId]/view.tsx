@@ -13,6 +13,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { useVesselData } from "@/context/VesselDataContext";
 import { formatVal } from "@/data/jubVessels";
 import { vesselSections } from "@/lib/vesselFields";
+import { wdtHref } from "@/lib/wdt";
 
 function getCleanImo(idImo: string | number | undefined): string | null {
   if (idImo === undefined || idImo === null) return null;
@@ -145,9 +146,10 @@ export default function VesselDetailPage({
       {equasis?.geo && equasis.geo.length > 0 && <VesselHistory rows={equasis.geo} />}
 
       {/* Plain <a> (not next/link): forces a real document request so the Cloudflare
-          access gate on /weather-downtime actually runs. basePath kept for GitHub Pages. */}
+          access gate on /weather-downtime actually runs. wdtHref resolves basePath for
+          the local route, or an absolute gated URL on the public GitHub Pages build. */}
       <a
-        href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/weather-downtime?type=${params.type}&vessel=${vessel.id}`}
+        href={wdtHref(`?type=${params.type}&vessel=${vessel.id}`)}
         className="cta-accent group mb-6 flex items-center justify-between gap-3 rounded-xl2 p-5 transition hover:border-accent"
       >
         <div className="flex items-start gap-3">

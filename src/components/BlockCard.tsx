@@ -42,10 +42,10 @@ export default function BlockCard({ href, icon: Icon, title, desc, accent, badge
   );
 
   if (hardNav) {
-    const bp = process.env.NEXT_PUBLIC_BASE_PATH || "";
-    const full = href.startsWith("/") ? bp + href : href;
+    // href is already fully resolved by the caller (basePath-prefixed local route, or an
+    // absolute external URL) — use it verbatim so the real document request runs the gate.
     return (
-      <a href={full} className={CARD_CLS}>
+      <a href={href} className={CARD_CLS}>
         {inner}
       </a>
     );
