@@ -29,8 +29,10 @@ export const defaultLimitsByType: Record<string, TypeLimits> = {
 // has no per-vessel limit columns). Hs in metres, wind in knots. Add an entry when a
 // specific vessel has its own documented operating envelope.
 export const vesselWorkingOverride: Record<string, ModeLimit> = {
-  // Telford 33 (a.k.a. Guo Hai An Hong, IMO 9786255): working Hs 10 ft (3 m) / wind 30 kn.
-  "telford-33": { hs: 3.0, windKn: 30 },
+  // Telford 33 (a.k.a. Guo Hai An Hong, IMO 9786255): working Hs 2.5 m / wind 30 kn.
+  "telford-33": { hs: 2.5, windKn: 30 },
+  // Telford 31: working Hs 7.5 ft (2.29 m) / wind 26 kn.
+  "telford-31": { hs: 2.29, windKn: 26 },
 };
 
 // Mechanical-downtime coefficients (percent), estimated from vessel age.
