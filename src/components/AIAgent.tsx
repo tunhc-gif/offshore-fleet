@@ -18,6 +18,17 @@ import {
   Confidence,
 } from "@/lib/aiAgentQuery";
 import { detectField, detectMonth, matchVesselsToField, monthLabel } from "@/lib/aiAgentFieldMatch";
+import {
+  detectUsageRegion,
+  computeRegionUsage,
+  usageAnswerText,
+  usageConfidence,
+  loadEquasis,
+  RegionUsage,
+  UsageRegion,
+  EquasisData,
+} from "@/lib/aiAgentRegionUsage";
+import { vesselTypes } from "@/data/vesselTypes";
 import { llmParseToStructured, llmSummarize } from "@/lib/aiAgentLlm";
 import { AI_PROXY_ENABLED } from "@/config/aiProxy";
 import { DictKey, Locale } from "@/lib/i18n";
@@ -33,6 +44,7 @@ type ChatMessage = {
   summary?: string; // grounded LLM prose (advisory), rendered above the cards
   aiAssisted?: boolean; // the LLM parse layer produced this answer
   pending?: boolean; // waiting on the LLM round-trip
+  usage?: RegionUsage; // vessel-type usage ranking for a region (operating history)
 };
 
 function format(str: string, vars: Record<string, string | number>): string {
@@ -56,7 +68,15 @@ function keywordMatchReason(v: JubVessel, q: string): string {
 
 // `vessels` = the (capped) list shown in chat; `allMatched` = the FULL result set
 // used for CSV export so the file matches the headline count, not the display slice.
-type Answer = { text: string; vessels: Vessel[]; allMatched: Vessel[]; describe: (v: Vessel) => string; confidence: Confidence; source: "class" | "weather" | "structured" | "keyword" };
+type Answer = {
+  text: string;
+  vessels: Vessel[];
+  allMatched: Vessel[];
+  describe: (v: Vessel) => string;
+  confidence: Confidence;
+  source: "class" | "weather" | "usage" | "structured" | "keyword";
+  usage?: RegionUsage;
+};
 
 const CLASS_ASK = /drydock|dry-dock|lên đà|len da|special survey|periodic survey|đăng kiểm định kỳ|còn class|con class|treo class|withdrawn|suspended|hết hạn|het han|class status|tình trạng class|tinh trang class|class certificate|chứng chỉ đăng kiểm|giấy chứng nhận class/i;
 
@@ -129,6 +149,26 @@ function answerFor(query: string, locale: Locale, tt: (key: DictKey) => string, 
   return { text, vessels: foundAll.slice(0, 8), allMatched: foundAll, describe: (v) => keywordMatchReason(v, query), confidence: keywordConfidence(foundAll.length), source: "keyword" };
 }
 
+// Region usage — "which vessel types are used in <region>?" ranked by the fleet's
+// Equasis operating history (vessel-months seen in the region). Deterministic.
+function usageAnswer(region: UsageRegion, eq: EquasisData, allVessels: Vessel[], locale: Locale): Answer {
+  const usage = computeRegionUsage(region, allVessels, eq);
+  const monthsById = new Map(usage.seen.map((s) => [s.vessel.id, s.months]));
+  const codeOf = (slug: string) => vesselTypes.find((t) => t.slug === slug)?.code ?? slug.toUpperCase();
+  return {
+    text: usageAnswerText(usage, locale),
+    vessels: usage.seen.slice(0, 10).map((s) => s.vessel),
+    allMatched: usage.seen.map((s) => s.vessel),
+    describe: (v) =>
+      locale === "vi"
+        ? `${codeOf(v.category)} · ${monthsById.get(v.id) ?? 0} tháng làm việc ở vùng này`
+        : `${codeOf(v.category)} · ${monthsById.get(v.id) ?? 0} months in this region`,
+    confidence: usageConfidence(usage),
+    source: "usage",
+    usage,
+  };
+}
+
 // Build a chat Answer from an LLM-parsed StructuredResult (same shape/branch as
 // the deterministic structured path, so rendering & CSV behave identically).
 function answerFromLlm(
@@ -156,8 +196,8 @@ function answerFromLlm(
   };
 }
 
-function answerToMsg(a: Answer): Pick<ChatMessage, "text" | "vessels" | "allMatched" | "describe" | "confidence"> {
-  return { text: a.text, vessels: a.vessels, allMatched: a.allMatched, describe: a.describe, confidence: a.confidence };
+function answerToMsg(a: Answer): Pick<ChatMessage, "text" | "vessels" | "allMatched" | "describe" | "confidence" | "usage"> {
+  return { text: a.text, vessels: a.vessels, allMatched: a.allMatched, describe: a.describe, confidence: a.confidence, usage: a.usage };
 }
 
 const CONF_STYLE: Record<Confidence["level"], string> = {
@@ -222,6 +262,29 @@ export default function AIAgent() {
     const userMsg: ChatMessage = { id: idRef.current, role: "user", text: query };
     idRef.current += 1;
     const aiId = idRef.current;
+
+    // Region-usage questions: lazy-load the operating history, answer deterministically.
+    const usageRegion = detectUsageRegion(query);
+    if (usageRegion) {
+      setMessages((prev) => [...prev, userMsg, { id: aiId, role: "ai", text: t("aiAgentThinking"), pending: true }]);
+      setInput("");
+      let msg: ChatMessage;
+      try {
+        const eq = await loadEquasis();
+        msg = { id: aiId, role: "ai", ...answerToMsg(usageAnswer(usageRegion, eq, allVessels, locale)) };
+      } catch {
+        msg = {
+          id: aiId,
+          role: "ai",
+          text:
+            locale === "vi"
+              ? "Không tải được dữ liệu lịch sử hoạt động. Vui lòng thử lại."
+              : "Could not load the operating-history data. Please try again.",
+        };
+      }
+      setMessages((prev) => prev.map((m) => (m.id === aiId ? msg : m)));
+      return;
+    }
 
     const local = answerFor(query, locale, t, allVessels);
     const localSolid =
@@ -303,6 +366,7 @@ export default function AIAgent() {
       vi ? "Tàu tự nâng lớn nhất" : "Largest liftboat",
       vi ? "AHTS bollard pull mạnh nhất" : "Strongest AHTS bollard pull",
       // 5 — khu vực
+      vi ? "Loại tàu hay dùng ở Trung Đông" : "Vessel types used in the Middle East",
       vi ? "JUB ở Trung Đông" : "JUB in the Middle East",
       vi ? "OCV ở Việt Nam" : "OCV in Vietnam",
       // 3 — năng lực / chức năng
@@ -405,6 +469,54 @@ export default function AIAgent() {
                           <p className="text-[11px] font-semibold uppercase tracking-wide text-brand-400">{t("aiAgentSummaryTitle")}</p>
                           <p className="mt-1 whitespace-pre-line text-[13px] text-ink">{m.summary}</p>
                           <p className="mt-1.5 text-[10px] italic text-ink-soft">{t("aiAgentGroundedNote")}</p>
+                        </div>
+                      )}
+
+                      {m.role === "ai" && m.usage && m.usage.rows.length > 0 && (
+                        <div className="mt-2 rounded-lg border border-border bg-surface px-2.5 py-2">
+                          <p className="text-[11px] font-semibold uppercase tracking-wide text-brand-400">
+                            {locale === "vi" ? "Xếp hạng theo thời gian làm việc" : "Ranked by time worked"}
+                          </p>
+                          <table className="mt-1.5 w-full text-[11px]">
+                            <thead>
+                              <tr className="text-left text-ink-soft">
+                                <th className="py-0.5 pr-1 font-medium">{locale === "vi" ? "Loại" : "Type"}</th>
+                                <th className="py-0.5 pr-1 text-right font-medium">{locale === "vi" ? "Tàu" : "Vessels"}</th>
+                                <th className="py-0.5 pr-1 text-right font-medium">{locale === "vi" ? "Tháng-tàu" : "Vsl-months"}</th>
+                                <th className="py-0.5 font-medium">%</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {m.usage.rows.map((r) => (
+                                <tr key={r.slug} className="border-t border-border/60 align-middle" title={r.top.join(", ")}>
+                                  <td className="py-1 pr-1 font-semibold text-ink">{r.code}</td>
+                                  <td className="py-1 pr-1 text-right text-ink">
+                                    {r.vessels}
+                                    <span className="text-ink-soft">/{r.fleetWithHistory}</span>
+                                  </td>
+                                  <td className="py-1 pr-1 text-right text-ink">{r.months}</td>
+                                  <td className="py-1">
+                                    <div className="flex items-center gap-1">
+                                      <div className="h-1.5 w-14 overflow-hidden rounded-full bg-surface-3">
+                                        <div className="h-full rounded-full bg-brand-500" style={{ width: `${Math.min(100, r.share)}%` }} />
+                                      </div>
+                                      <span className="text-ink-soft">{r.share}%</span>
+                                    </div>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                          <p className="mt-1.5 text-[10px] italic text-ink-soft">
+                            {locale === "vi"
+                              ? "Tàu = số tàu từng làm việc ở vùng / số tàu loại đó có lịch sử Equasis. Tháng-tàu = tổng số tháng các tàu được ghi nhận ở vùng."
+                              : "Vessels = seen in region / vessels of that type with Equasis history. Vessel-months = total months recorded in the region."}
+                          </p>
+                          {(locale === "vi" ? m.usage.region.noteVi : m.usage.region.noteEn) && (
+                            <p className="mt-1 text-[10px] italic text-amber-500">
+                              {locale === "vi" ? m.usage.region.noteVi : m.usage.region.noteEn}
+                            </p>
+                          )}
                         </div>
                       )}
 
