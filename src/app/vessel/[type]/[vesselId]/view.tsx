@@ -1,7 +1,7 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import { Info, Radar, ExternalLink, CloudRain, ChevronRight, Camera } from "lucide-react";
+import { Info, Radar, ExternalLink, CloudRain, ChevronRight, Camera, Sparkles } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import VesselPhotos from "@/components/VesselPhotos";
 import ClassSurvey from "@/components/ClassSurvey";
@@ -157,7 +157,13 @@ export default function VesselDetailPage({
             <CloudRain size={18} />
           </span>
           <div>
-            <h3 className="brand-headline text-sm text-ink">{t("wdCtaTitle")}</h3>
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className="brand-headline text-sm text-ink">{t("wdCtaTitle")}</h3>
+              <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                <Sparkles size={11} />
+                {t("advancedFeature")}
+              </span>
+            </div>
             <p className="mt-1 text-xs text-ink-soft">{t("wdCtaDesc")}</p>
           </div>
         </div>

@@ -55,6 +55,7 @@ export default function HomePage() {
           icon={CloudRain}
           title={t("blockWeatherTitle")}
           desc={t("blockWeatherDesc")}
+          highlight={t("advancedFeature")}
           hardNav
         />
       </div>
