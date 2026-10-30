@@ -3,3 +3,6 @@ node_modules
 out
 .env*
 npm-debug.log*
+
+# Plaintext Saudi Aramco OOM knowledge base for LOCAL dev only (controlled document — never commit)
+public/kb-dev/

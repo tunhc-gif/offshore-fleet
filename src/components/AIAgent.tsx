@@ -29,6 +29,8 @@ import {
   EquasisData,
 } from "@/lib/aiAgentRegionUsage";
 import { vesselTypes } from "@/data/vesselTypes";
+import { isOomStrong, isOomRuleQuestion, loadOom, searchOom, OomResult, OomAccessError } from "@/lib/aiAgentOom";
+import { wdtHref } from "@/lib/wdt";
 import { llmParseToStructured, llmSummarize } from "@/lib/aiAgentLlm";
 import { AI_PROXY_ENABLED } from "@/config/aiProxy";
 import { DictKey, Locale } from "@/lib/i18n";
@@ -45,7 +47,63 @@ type ChatMessage = {
   aiAssisted?: boolean; // the LLM parse layer produced this answer
   pending?: boolean; // waiting on the LLM round-trip
   usage?: RegionUsage; // vessel-type usage ranking for a region (operating history)
+  oom?: OomResult; // Saudi Aramco OOM answer (curated facts + manual passages)
+  oomGate?: "auth" | "unavailable"; // OOM needs access / not available on this copy
 };
+
+// Saudi Aramco OOM Q&A. `quiet` = only answer when something relevant is found
+// (used as a fallback for weak local answers); otherwise also report gate/no-match.
+async function oomMessage(query: string, aiId: number, locale: Locale, quiet: boolean): Promise<ChatMessage | null> {
+  const vi = locale === "vi";
+  try {
+    const idx = await loadOom();
+    const r = searchOom(idx, query);
+    if (r.facts.length === 0 && r.hits.length === 0) {
+      if (quiet) return null;
+      return {
+        id: aiId,
+        role: "ai",
+        text: vi
+          ? "Không tìm thấy nội dung phù hợp trong Saudi Aramco Offshore Operations Manual (Rev.3). Thử diễn đạt khác hoặc dùng từ khóa tiếng Anh (vd: under keel clearance, bunkering, helideck)."
+          : "Nothing relevant found in the Saudi Aramco Offshore Operations Manual (Rev.3). Try rephrasing or English keywords (e.g. under keel clearance, bunkering, helideck).",
+        confidence: { level: "low", reasonVi: "Không có đoạn nào trong tài liệu khớp đủ mạnh.", reasonEn: "No passage matched strongly enough." },
+      };
+    }
+    return {
+      id: aiId,
+      role: "ai",
+      text: vi ? "📘 Theo Saudi Aramco – Offshore Operations Manual (Rev.3, 01/2023):" : "📘 Per the Saudi Aramco Offshore Operations Manual (Rev.3, Jan 2023):",
+      oom: r,
+      confidence:
+        r.facts.length > 0
+          ? {
+              level: "high",
+              reasonVi: "Điểm chính đã được đối chiếu nguyên văn với tài liệu gốc (xem số mục, trang và câu gốc).",
+              reasonEn: "Key facts verified verbatim against the manual (see section, page and source quote).",
+            }
+          : {
+              level: "medium",
+              reasonVi: "Đoạn trích liên quan nhất theo từ khóa — đọc mục gốc trong tài liệu để chắc chắn.",
+              reasonEn: "Most relevant passages by keyword — read the original section to be sure.",
+            },
+    };
+  } catch (e) {
+    if (quiet) return null;
+    const auth = e instanceof OomAccessError;
+    return {
+      id: aiId,
+      role: "ai",
+      text: auth
+        ? vi
+          ? "📘 Tra cứu tài liệu Saudi Aramco Offshore Operations Manual là Tính năng Nâng cao — cần được cấp quyền truy cập (dùng chung quyền với Weather Downtime)."
+          : "📘 The Saudi Aramco Offshore Operations Manual lookup is an Advanced feature — access approval is required (same as Weather Downtime)."
+        : vi
+          ? "📘 Tra cứu Saudi Aramco Offshore Operations Manual chỉ chạy trên bản chính thức của nền tảng."
+          : "📘 The Saudi Aramco Offshore Operations Manual lookup only runs on the official platform site.",
+      oomGate: auth ? "auth" : "unavailable",
+    };
+  }
+}
 
 function format(str: string, vars: Record<string, string | number>): string {
   return Object.entries(vars).reduce((acc, [key, val]) => acc.replaceAll(`{${key}}`, String(val)), str);
@@ -263,6 +321,15 @@ export default function AIAgent() {
     idRef.current += 1;
     const aiId = idRef.current;
 
+    // Saudi Aramco OOM — clearly a manual/rules question → answer from the manual.
+    if (isOomStrong(query)) {
+      setMessages((prev) => [...prev, userMsg, { id: aiId, role: "ai", text: t("aiAgentThinking"), pending: true }]);
+      setInput("");
+      const msg = (await oomMessage(query, aiId, locale, false))!;
+      setMessages((prev) => prev.map((m) => (m.id === aiId ? msg : m)));
+      return;
+    }
+
     // Region-usage questions: lazy-load the operating history, answer deterministically.
     const usageRegion = detectUsageRegion(query);
     if (usageRegion) {
@@ -291,6 +358,21 @@ export default function AIAgent() {
       local.source === "class" ||
       local.source === "weather" ||
       (local.source === "structured" && local.allMatched.length > 0);
+
+    // Weak local answer → the question may be about operating rules: try the OOM.
+    // Rule-style questions ("tối đa/yêu cầu/quy định…" + a maritime topic) also report
+    // the access gate; anything else only shows OOM results if something is found.
+    if (!localSolid) {
+      const ruleQ = isOomRuleQuestion(query);
+      if (ruleQ || local.allMatched.length === 0) {
+        setMessages((prev) => [...prev, userMsg, { id: aiId, role: "ai", text: t("aiAgentThinking"), pending: true }]);
+        setInput("");
+        const msg = await oomMessage(query, aiId, locale, !ruleQ);
+        const fallback: ChatMessage = { id: aiId, role: "ai", ...answerToMsg(local) };
+        setMessages((prev) => prev.map((m) => (m.id === aiId ? msg ?? fallback : m)));
+        return;
+      }
+    }
 
     // No proxy, or the offline engine already answered well → render immediately.
     if (!AI_PROXY_ENABLED || localSolid) {
@@ -367,6 +449,9 @@ export default function AIAgent() {
       vi ? "AHTS bollard pull mạnh nhất" : "Strongest AHTS bollard pull",
       // 5 — khu vực
       vi ? "Loại tàu hay dùng ở Trung Đông" : "Vessel types used in the Middle East",
+      // Saudi Aramco OOM (Tính năng Nâng cao)
+      vi ? "Aramco: tốc độ tối đa vùng 500m" : "Aramco: max speed in 500m zone",
+      vi ? "Aramco: UKC tối thiểu qua đường ống" : "Aramco: min UKC over pipelines",
       vi ? "JUB ở Trung Đông" : "JUB in the Middle East",
       vi ? "OCV ở Việt Nam" : "OCV in Vietnam",
       // 3 — năng lực / chức năng
@@ -469,6 +554,55 @@ export default function AIAgent() {
                           <p className="text-[11px] font-semibold uppercase tracking-wide text-brand-400">{t("aiAgentSummaryTitle")}</p>
                           <p className="mt-1 whitespace-pre-line text-[13px] text-ink">{m.summary}</p>
                           <p className="mt-1.5 text-[10px] italic text-ink-soft">{t("aiAgentGroundedNote")}</p>
+                        </div>
+                      )}
+
+                      {m.role === "ai" && m.oomGate && (
+                        <a
+                          href={m.oomGate === "auth" ? wdtHref() : "https://offshore-fleet.pages.dev"}
+                          className="mt-2 inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-amber-400 to-orange-500 px-3 py-1.5 text-xs font-semibold text-white shadow-sm"
+                        >
+                          {m.oomGate === "auth"
+                            ? locale === "vi" ? "Yêu cầu quyền truy cập" : "Request access"
+                            : locale === "vi" ? "Mở bản chính thức" : "Open official site"}
+                          <ArrowRight size={13} />
+                        </a>
+                      )}
+
+                      {m.role === "ai" && m.oom && (
+                        <div className="mt-2 space-y-1.5">
+                          {m.oom.facts.map((f) => (
+                            <div key={f.id} className="rounded-lg border border-amber-500/40 bg-amber-500/5 px-2.5 py-2">
+                              <p className="text-[13px] font-medium text-ink">{locale === "vi" ? f.vi : f.en}</p>
+                              <p className="mt-1 text-[10.5px] font-semibold text-amber-600">
+                                §{f.sec} · {f.title} · {locale === "vi" ? "tr." : "p."} {f.page}
+                              </p>
+                              <details className="mt-1">
+                                <summary className="cursor-pointer text-[10.5px] text-ink-soft">{locale === "vi" ? "Nguyên văn tài liệu" : "Source text"}</summary>
+                                <p className="mt-1 whitespace-pre-line text-[11px] italic text-ink-soft">“{f.quote}”</p>
+                              </details>
+                            </div>
+                          ))}
+                          {m.oom.hits.length > 0 && (
+                            <p className="pt-1 text-[11px] font-semibold uppercase tracking-wide text-brand-400">
+                              {m.oom.facts.length > 0
+                                ? locale === "vi" ? "Mục liên quan khác" : "Other related sections"
+                                : locale === "vi" ? "Đoạn liên quan nhất" : "Most relevant passages"}
+                            </p>
+                          )}
+                          {m.oom.hits.map((h) => (
+                            <div key={h.secId + h.page} className="rounded-lg border border-border bg-surface px-2.5 py-2">
+                              <p className="text-[11px] font-semibold text-ink">
+                                §{h.secId} {h.title} · {locale === "vi" ? "tr." : "p."} {h.page}
+                              </p>
+                              <p className="mt-1 text-[11px] leading-snug text-ink-soft">{h.snippet}</p>
+                            </div>
+                          ))}
+                          <p className="text-[10px] italic text-ink-soft">
+                            {locale === "vi"
+                              ? "Nội dung nội bộ Saudi Aramco (Company General Use) — chỉ dùng tham khảo, luôn đối chiếu bản gốc hiện hành."
+                              : "Saudi Aramco internal content (Company General Use) — for reference only; always check the current original."}
+                          </p>
                         </div>
                       )}
 

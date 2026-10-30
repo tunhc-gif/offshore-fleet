@@ -7,7 +7,10 @@
 // a signed cookie to that visitor's browser.
 import { cookies, setCookie, setReadableCookie, tokenValid, makeToken, linkSig, safeEq } from "./_shared.js";
 
-const GATED_PREFIX = "/weather-downtime"; // the only protected route
+const GATED_PREFIX = "/weather-downtime"; // the protected tool
+// The AI Agent's encrypted knowledge base (Saudi Aramco OOM). Same access as the tool,
+// but answered with JSON 401 (not the HTML form) because it is fetched by the chat.
+const KB_PREFIX = "/kb/";
 const OK_COOKIE = "wdt_ok"; // signed access token (once = session, forever = ~10y)
 const LVL_COOKIE = "wdt_lvl"; // readable UI hint: 'once' | 'forever'
 const REQ_COOKIE = "wdt_req"; // pending request id, so repeat requests don't re-email
@@ -25,6 +28,16 @@ export async function onRequest(context) {
 
   // The approval API must always be reachable (no cookie needed).
   if (path.startsWith("/access/")) return next();
+
+  // Knowledge base: same permission as the tool, JSON answers for the chat client.
+  if (path.startsWith(KB_PREFIX)) {
+    if (env.GATE_DISABLED === "1") return next();
+    if (env.SECRET && (await tokenValid(env.SECRET, cookies(request)[OK_COOKIE]))) return next();
+    return new Response(JSON.stringify({ error: "auth" }), {
+      status: 401,
+      headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
+    });
+  }
 
   // Everything that is NOT the Weather Downtime tool is public — pass straight through.
   if (!path.startsWith(GATED_PREFIX)) return next();
